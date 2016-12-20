@@ -1,0 +1,68 @@
+//
+//  GFBS.pch
+//  GFBS
+//
+//  Created by apple on 16/11/15.
+//  Copyright © 2016年 apple. All rights reserved.
+//
+
+#ifndef GFBS_pch
+#define GFBS_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* GFBS_pch */
+
+
+
+#import "UIBarButtonItem+GFItem.h"
+
+#import "UIView+GFFrame.h"
+//自定义刷新
+#import "GFRefreshHeader.h"
+#import "GFRefreshFooter.h"
+//网络请求管理者
+#import "GFHTTPSessionManager.h"
+
+
+#import "GFConst.h"
+//日期分类
+#import "NSDate+GFExtension.h"
+#import "NSCalendar+GFExtension.h"
+
+//图片处理
+#import "UIImage+GFImage.h"
+
+//顶部窗口（点击返回）
+#import "GFTopWindow.h"
+
+
+/*****************  日志  ******************/
+#ifdef DEBUG//调试
+#define GFBSLog(...) NSLog(__VA_ARGS__)
+#else//发布
+#define GFBSLog(...)
+#endif
+
+#define GFBSLogFunc GFBSLog(@"%s", __func__)
+
+
+#define  GFScreenHeight [UIScreen mainScreen].bounds.size.height
+#define  GFScreenWidth [UIScreen mainScreen].bounds.size.width
+
+/*****************  屏幕适配  ******************/
+#define iphone6p (GFScreenHeight == 763)
+#define iphone6 (GFScreenHeight == 667)
+#define iphone5 (GFScreenHeight == 568)
+#define iphone4 (GFScreenHeight == 480)
+
+
+
+/*****************  全局背景色  ******************/
+#define GFBgColor  [UIColor colorWithRed:(206/255.0) green:(206/255.0) blue:(206/255.0) alpha:1.0]
+
+
+/*****************  系统适配  ******************/
+#define GFIOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= (version))
+

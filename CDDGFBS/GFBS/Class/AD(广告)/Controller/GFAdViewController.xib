@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GFAdViewController">
+            <connections>
+                <outlet property="adContent" destination="WNq-da-rr7" id="rrv-2h-13k"/>
+                <outlet property="jumpBtn" destination="xt6-eE-5UC" id="sS7-Gc-OlG"/>
+                <outlet property="launchImageView" destination="r28-ap-sPR" id="rEW-Zy-m2u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r28-ap-sPR"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNq-da-rr7" userLabel="站位视图">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt6-eE-5UC" userLabel="跳转">
+                    <color key="backgroundColor" white="0.0" alpha="0.65063316993464049" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title=" 跳转 (3) "/>
+                    <connections>
+                        <action selector="jumpDismiss:" destination="-1" eventType="touchUpInside" id="zOQ-Wq-SxU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xt6-eE-5UC" secondAttribute="trailing" constant="20" id="2mY-dQ-JY2"/>
+                <constraint firstAttribute="bottom" secondItem="r28-ap-sPR" secondAttribute="bottom" id="9RY-NM-Dtv"/>
+                <constraint firstItem="r28-ap-sPR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BPN-kl-qfA"/>
+                <constraint firstItem="r28-ap-sPR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EM6-r6-Ahu"/>
+                <constraint firstItem="WNq-da-rr7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GnY-LC-DrS"/>
+                <constraint firstAttribute="trailing" secondItem="r28-ap-sPR" secondAttribute="trailing" id="TSe-RU-Wjp"/>
+                <constraint firstItem="WNq-da-rr7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UT6-P3-PlG"/>
+                <constraint firstAttribute="bottom" secondItem="WNq-da-rr7" secondAttribute="bottom" id="fAg-O4-paJ"/>
+                <constraint firstAttribute="trailing" secondItem="WNq-da-rr7" secondAttribute="trailing" id="ppD-5N-c20"/>
+                <constraint firstItem="xt6-eE-5UC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="qkA-8X-iGd"/>
+            </constraints>
+            <point key="canvasLocation" x="-1.5" y="-59.5"/>
+        </view>
+    </objects>
+</document>

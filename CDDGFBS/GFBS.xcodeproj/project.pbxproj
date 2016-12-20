@@ -1,0 +1,1353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1801C3C31DEB1BA90073C6CD /* GFTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801C3C21DEB1BA90073C6CD /* GFTopicViewController.m */; };
+		1802923F1DE98E3800743619 /* NSDate+GFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802923E1DE98E3800743619 /* NSDate+GFExtension.m */; };
+		180292421DE990C700743619 /* NSCalendar+GFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 180292411DE990C700743619 /* NSCalendar+GFExtension.m */; };
+		182391461DEEC70500B88AE0 /* GFCommentHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182391451DEEC70500B88AE0 /* GFCommentHeaderFooterView.m */; };
+		1823914D1DEECDEB00B88AE0 /* GFCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1823914B1DEECDEB00B88AE0 /* GFCommentCell.m */; };
+		1823914E1DEECDEB00B88AE0 /* GFCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1823914C1DEECDEB00B88AE0 /* GFCommentCell.xib */; };
+		1829A69E1DE7E8390086AD86 /* GFTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A69D1DE7E8390086AD86 /* GFTopic.m */; };
+		1829A6A11DE818F70086AD86 /* GFRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A01DE818F70086AD86 /* GFRefreshHeader.m */; };
+		1829A6A41DE82DCF0086AD86 /* GFRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A31DE82DCF0086AD86 /* GFRefreshFooter.m */; };
+		1829A6A71DE83B9A0086AD86 /* GFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A61DE83B9A0086AD86 /* GFHTTPSessionManager.m */; };
+		1829A6AA1DE84CAF0086AD86 /* GFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A91DE84CAF0086AD86 /* GFConst.m */; };
+		1829A6AE1DE8550D0086AD86 /* GFTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6AC1DE8550D0086AD86 /* GFTopicCell.m */; };
+		1829A6AF1DE8550D0086AD86 /* GFTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829A6AD1DE8550D0086AD86 /* GFTopicCell.xib */; };
+		18388AD01DFAAB1D004E1DF9 /* GFSubTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18388ACE1DFAAB1D004E1DF9 /* GFSubTagViewCell.m */; };
+		18388AD11DFAAB1D004E1DF9 /* GFSubTagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18388ACF1DFAAB1D004E1DF9 /* GFSubTagViewCell.xib */; };
+		18388AD41DFAAB27004E1DF9 /* GFSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18388AD31DFAAB27004E1DF9 /* GFSubTagItem.m */; };
+		18388AD81DFAAF21004E1DF9 /* GFRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18388AD61DFAAF21004E1DF9 /* GFRecommendViewController.m */; };
+		18388AD91DFAAF21004E1DF9 /* GFRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18388AD71DFAAF21004E1DF9 /* GFRecommendViewController.xib */; };
+		1841A7721DE16C1100FB54CC /* GFMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841A7711DE16C1100FB54CC /* GFMeViewController.storyboard */; };
+		1841A7751DE1750600FB54CC /* GFSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A7741DE1750600FB54CC /* GFSquareItem.m */; };
+		1841A7791DE1752E00FB54CC /* GFSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A7771DE1752E00FB54CC /* GFSquareCell.m */; };
+		1841A77A1DE1752E00FB54CC /* GFSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1841A7781DE1752E00FB54CC /* GFSquareCell.xib */; };
+		1841A77E1DE17BE400FB54CC /* GFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A77C1DE17BE400FB54CC /* GFWebViewController.m */; };
+		1841A77F1DE17BE400FB54CC /* GFWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1841A77D1DE17BE400FB54CC /* GFWebViewController.xib */; };
+		184D49351DED5DBE00C7B03F /* GFCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D49341DED5DBE00C7B03F /* GFCommentViewController.m */; };
+		184D49371DED5DC400C7B03F /* GFCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184D49361DED5DC400C7B03F /* GFCommentViewController.xib */; };
+		185420881DF064F1004F6378 /* GFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185420841DF064F1004F6378 /* GFSettingViewController.m */; };
+		185420891DF064F1004F6378 /* GFSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185420851DF064F1004F6378 /* GFSettingViewController.storyboard */; };
+		189980491DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */; };
+		1899804C1DDBF33D009071F4 /* UIView+GFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899804B1DDBF33D009071F4 /* UIView+GFFrame.m */; };
+		189980501DDBF6B4009071F4 /* GFAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899804E1DDBF6B4009071F4 /* GFAdViewController.m */; };
+		189980511DDBF6B4009071F4 /* GFAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1899804F1DDBF6B4009071F4 /* GFAdViewController.xib */; };
+		189980541DDBF6D2009071F4 /* GFAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 189980531DDBF6D2009071F4 /* GFAdItem.m */; };
+		189CA3251DDADBF6004D07EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189CA3241DDADBF6004D07EA /* main.m */; };
+		189CA3301DDADBF6004D07EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189CA32F1DDADBF6004D07EA /* Assets.xcassets */; };
+		189CA3331DDADBF6004D07EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189CA3311DDADBF6004D07EA /* LaunchScreen.storyboard */; };
+		189CA33E1DDADBF6004D07EA /* GFBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189CA33D1DDADBF6004D07EA /* GFBSTests.m */; };
+		189CA3491DDADBF6004D07EA /* GFBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189CA3481DDADBF6004D07EA /* GFBSUITests.m */; };
+		18A23F7B1DEBDA5D001FC558 /* UIImage+GFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A23F7A1DEBDA5D001FC558 /* UIImage+GFImage.m */; };
+		18B3D6BF1DEC517F00474981 /* GFSeeBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3D6BE1DEC517F00474981 /* GFSeeBigImageViewController.m */; };
+		18B3D6C11DEC518700474981 /* GFSeeBigImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B3D6C01DEC518700474981 /* GFSeeBigImageViewController.xib */; };
+		18B7C7221DE06F67004BD781 /* GFFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7C7211DE06F67004BD781 /* GFFriendTrendViewController.xib */; };
+		18B7C7261DE0717A004BD781 /* GFMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C7241DE0717A004BD781 /* GFMemberViewController.m */; };
+		18B7C7271DE0717A004BD781 /* GFMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7C7251DE0717A004BD781 /* GFMemberViewController.xib */; };
+		18B7C72A1DE07501004BD781 /* GFLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C7291DE07501004BD781 /* GFLoginRegisterView.m */; };
+		18B7C72C1DE07508004BD781 /* GFLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7C72B1DE07508004BD781 /* GFLoginRegisterView.xib */; };
+		18B7C72F1DE07C5A004BD781 /* GFFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C72E1DE07C5A004BD781 /* GFFastLoginView.m */; };
+		18B7C7311DE07C62004BD781 /* GFFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7C7301DE07C62004BD781 /* GFFastLoginView.xib */; };
+		18B7C7341DE07FE7004BD781 /* GFFastButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C7331DE07FE7004BD781 /* GFFastButton.m */; };
+		18B7C7371DE081BA004BD781 /* GFMemberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C7361DE081BA004BD781 /* GFMemberField.m */; };
+		18B7C73A1DE08392004BD781 /* UITextField+GFPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C7391DE08392004BD781 /* UITextField+GFPlaceholder.m */; };
+		18B7C73D1DE08620004BD781 /* GFSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7C73C1DE08620004BD781 /* GFSubTagViewController.m */; };
+		18BE02911DDB497A00D27893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02871DDB497A00D27893 /* AppDelegate.m */; };
+		18BE029F1DDB4A7600D27893 /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE029E1DDB4A7600D27893 /* GFNavigationController.m */; };
+		18BE02A21DDB4A8900D27893 /* GFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02A11DDB4A8900D27893 /* GFTabBarController.m */; };
+		18BE02A61DDB4C0400D27893 /* GFEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02A51DDB4C0400D27893 /* GFEssenceViewController.m */; };
+		18BE02A91DDB4C0F00D27893 /* GFPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */; };
+		18BE02AC1DDB4C1E00D27893 /* GFFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02AB1DDB4C1E00D27893 /* GFFriendTrendViewController.m */; };
+		18BE02AF1DDB4C2A00D27893 /* GFNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02AE1DDB4C2A00D27893 /* GFNewViewController.m */; };
+		18BE02B21DDB4C3900D27893 /* GFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02B11DDB4C3900D27893 /* GFMeViewController.m */; };
+		18BE02B51DDB6EB100D27893 /* GFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02B41DDB6EB100D27893 /* GFTabBar.m */; };
+		18C6FEA61DFBD96F00ED1195 /* GFRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6FEA51DFBD96F00ED1195 /* GFRecommendCategory.m */; };
+		18C6FEA91DFBD99200ED1195 /* GFRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6FEA81DFBD99200ED1195 /* GFRecommendUser.m */; };
+		18C826291DE72630007341E3 /* GFTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C826281DE72630007341E3 /* GFTitleButton.m */; };
+		18C8262C1DE7368D007341E3 /* GFAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8262B1DE7368D007341E3 /* GFAllViewController.m */; };
+		18C8262F1DE7369C007341E3 /* GFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8262E1DE7369C007341E3 /* GFVideoViewController.m */; };
+		18C826351DE736B3007341E3 /* GFPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C826341DE736B3007341E3 /* GFPictureViewController.m */; };
+		18C826381DE736C1007341E3 /* GFWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C826371DE736C1007341E3 /* GFWordViewController.m */; };
+		18C8263E1DE737C9007341E3 /* GFVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8263D1DE737C9007341E3 /* GFVoiceViewController.m */; };
+		18D5AE6B1DF69F94003001D2 /* GFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5AE6A1DF69F94003001D2 /* GFTopWindow.m */; };
+		18D5AE6E1DF6A49A003001D2 /* GFTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5AE6D1DF6A49A003001D2 /* GFTopViewController.m */; };
+		18E1D13C1DF597F10015243E /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1371DF597F10015243E /* LaunchImage-568h@2x.png */; };
+		18E1D13D1DF597F10015243E /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1381DF597F10015243E /* LaunchImage-700@2x.png */; };
+		18E1D13E1DF597F10015243E /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */; };
+		18E1D13F1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D13A1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png */; };
+		18E1D1401DF597F10015243E /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D13B1DF597F10015243E /* LaunchImage.png */; };
+		18E8D36C1DE9D19800ED4EE1 /* GFComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D3691DE9D19800ED4EE1 /* GFComment.m */; };
+		18E8D36D1DE9D19800ED4EE1 /* GFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D36B1DE9D19800ED4EE1 /* GFUser.m */; };
+		18E8D3701DE9EA4D00ED4EE1 /* GFTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D36F1DE9EA4D00ED4EE1 /* GFTopicPictureView.m */; };
+		18E8D3721DE9EA5700ED4EE1 /* GFTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8D3711DE9EA5700ED4EE1 /* GFTopicPictureView.xib */; };
+		18E8D3751DE9EA8400ED4EE1 /* GFTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D3741DE9EA8400ED4EE1 /* GFTopicVideoView.m */; };
+		18E8D3771DE9EA8E00ED4EE1 /* GFTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8D3761DE9EA8E00ED4EE1 /* GFTopicVideoView.xib */; };
+		18E8D37F1DE9EB4100ED4EE1 /* GFTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D37E1DE9EB4100ED4EE1 /* GFTopicVoiceView.m */; };
+		18E8D3811DE9EB4A00ED4EE1 /* GFTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8D3801DE9EB4A00ED4EE1 /* GFTopicVoiceView.xib */; };
+		F0DF6B9C479499B133954DC1 /* libPods-GFBS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F7F4458D42D3C1C1286EDF /* libPods-GFBS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189CA33A1DDADBF6004D07EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CA3181DDADBF6004D07EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189CA31F1DDADBF6004D07EA;
+			remoteInfo = GFBS;
+		};
+		189CA3451DDADBF6004D07EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CA3181DDADBF6004D07EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 189CA31F1DDADBF6004D07EA;
+			remoteInfo = GFBS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F7F4458D42D3C1C1286EDF /* libPods-GFBS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GFBS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1801C3C11DEB1BA90073C6CD /* GFTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopicViewController.h; sourceTree = "<group>"; };
+		1801C3C21DEB1BA90073C6CD /* GFTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopicViewController.m; sourceTree = "<group>"; };
+		1802923D1DE98E3800743619 /* NSDate+GFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GFExtension.h"; sourceTree = "<group>"; };
+		1802923E1DE98E3800743619 /* NSDate+GFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GFExtension.m"; sourceTree = "<group>"; };
+		180292401DE990C700743619 /* NSCalendar+GFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+GFExtension.h"; sourceTree = "<group>"; };
+		180292411DE990C700743619 /* NSCalendar+GFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+GFExtension.m"; sourceTree = "<group>"; };
+		182391441DEEC70500B88AE0 /* GFCommentHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCommentHeaderFooterView.h; sourceTree = "<group>"; };
+		182391451DEEC70500B88AE0 /* GFCommentHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFCommentHeaderFooterView.m; sourceTree = "<group>"; };
+		1823914A1DEECDEB00B88AE0 /* GFCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCommentCell.h; sourceTree = "<group>"; };
+		1823914B1DEECDEB00B88AE0 /* GFCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFCommentCell.m; sourceTree = "<group>"; };
+		1823914C1DEECDEB00B88AE0 /* GFCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFCommentCell.xib; sourceTree = "<group>"; };
+		1829A69C1DE7E8390086AD86 /* GFTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopic.h; sourceTree = "<group>"; };
+		1829A69D1DE7E8390086AD86 /* GFTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopic.m; sourceTree = "<group>"; };
+		1829A69F1DE818F70086AD86 /* GFRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRefreshHeader.h; sourceTree = "<group>"; };
+		1829A6A01DE818F70086AD86 /* GFRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRefreshHeader.m; sourceTree = "<group>"; };
+		1829A6A21DE82DCF0086AD86 /* GFRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRefreshFooter.h; sourceTree = "<group>"; };
+		1829A6A31DE82DCF0086AD86 /* GFRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRefreshFooter.m; sourceTree = "<group>"; };
+		1829A6A51DE83B9A0086AD86 /* GFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHTTPSessionManager.h; sourceTree = "<group>"; };
+		1829A6A61DE83B9A0086AD86 /* GFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1829A6A81DE84CAF0086AD86 /* GFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFConst.h; sourceTree = "<group>"; };
+		1829A6A91DE84CAF0086AD86 /* GFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFConst.m; sourceTree = "<group>"; };
+		1829A6AB1DE8550D0086AD86 /* GFTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopicCell.h; sourceTree = "<group>"; };
+		1829A6AC1DE8550D0086AD86 /* GFTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopicCell.m; sourceTree = "<group>"; };
+		1829A6AD1DE8550D0086AD86 /* GFTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFTopicCell.xib; sourceTree = "<group>"; };
+		18388ACD1DFAAB1D004E1DF9 /* GFSubTagViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFSubTagViewCell.h; path = "GFBS/Class/Me(我)/View/GFSubTagViewCell.h"; sourceTree = SOURCE_ROOT; };
+		18388ACE1DFAAB1D004E1DF9 /* GFSubTagViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFSubTagViewCell.m; path = "GFBS/Class/Me(我)/View/GFSubTagViewCell.m"; sourceTree = SOURCE_ROOT; };
+		18388ACF1DFAAB1D004E1DF9 /* GFSubTagViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GFSubTagViewCell.xib; path = "GFBS/Class/Me(我)/View/GFSubTagViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		18388AD21DFAAB27004E1DF9 /* GFSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFSubTagItem.h; path = "GFBS/Class/Me(我)/Model/GFSubTagItem.h"; sourceTree = SOURCE_ROOT; };
+		18388AD31DFAAB27004E1DF9 /* GFSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFSubTagItem.m; path = "GFBS/Class/Me(我)/Model/GFSubTagItem.m"; sourceTree = SOURCE_ROOT; };
+		18388AD51DFAAF21004E1DF9 /* GFRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecommendViewController.h; sourceTree = "<group>"; };
+		18388AD61DFAAF21004E1DF9 /* GFRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecommendViewController.m; sourceTree = "<group>"; };
+		18388AD71DFAAF21004E1DF9 /* GFRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFRecommendViewController.xib; sourceTree = "<group>"; };
+		1841A7711DE16C1100FB54CC /* GFMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GFMeViewController.storyboard; sourceTree = "<group>"; };
+		1841A7731DE1750600FB54CC /* GFSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSquareItem.h; sourceTree = "<group>"; };
+		1841A7741DE1750600FB54CC /* GFSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSquareItem.m; sourceTree = "<group>"; };
+		1841A7761DE1752E00FB54CC /* GFSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSquareCell.h; sourceTree = "<group>"; };
+		1841A7771DE1752E00FB54CC /* GFSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSquareCell.m; sourceTree = "<group>"; };
+		1841A7781DE1752E00FB54CC /* GFSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFSquareCell.xib; sourceTree = "<group>"; };
+		1841A77B1DE17BE400FB54CC /* GFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFWebViewController.h; sourceTree = "<group>"; };
+		1841A77C1DE17BE400FB54CC /* GFWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFWebViewController.m; sourceTree = "<group>"; };
+		1841A77D1DE17BE400FB54CC /* GFWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFWebViewController.xib; sourceTree = "<group>"; };
+		184D49331DED5DBE00C7B03F /* GFCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCommentViewController.h; sourceTree = "<group>"; };
+		184D49341DED5DBE00C7B03F /* GFCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFCommentViewController.m; sourceTree = "<group>"; };
+		184D49361DED5DC400C7B03F /* GFCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFCommentViewController.xib; sourceTree = "<group>"; };
+		185420831DF064F1004F6378 /* GFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSettingViewController.h; sourceTree = "<group>"; };
+		185420841DF064F1004F6378 /* GFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSettingViewController.m; sourceTree = "<group>"; };
+		185420851DF064F1004F6378 /* GFSettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GFSettingViewController.storyboard; sourceTree = "<group>"; };
+		189980471DDBEDA4009071F4 /* UIBarButtonItem+GFItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GFItem.h"; sourceTree = "<group>"; };
+		189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GFItem.m"; sourceTree = "<group>"; };
+		1899804A1DDBF33D009071F4 /* UIView+GFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GFFrame.h"; sourceTree = "<group>"; };
+		1899804B1DDBF33D009071F4 /* UIView+GFFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GFFrame.m"; sourceTree = "<group>"; };
+		1899804D1DDBF6B4009071F4 /* GFAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFAdViewController.h; sourceTree = "<group>"; };
+		1899804E1DDBF6B4009071F4 /* GFAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFAdViewController.m; sourceTree = "<group>"; };
+		1899804F1DDBF6B4009071F4 /* GFAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFAdViewController.xib; sourceTree = "<group>"; };
+		189980521DDBF6D2009071F4 /* GFAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFAdItem.h; sourceTree = "<group>"; };
+		189980531DDBF6D2009071F4 /* GFAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFAdItem.m; sourceTree = "<group>"; };
+		189CA3201DDADBF6004D07EA /* GFBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		189CA3241DDADBF6004D07EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		189CA32F1DDADBF6004D07EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		189CA3321DDADBF6004D07EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		189CA3341DDADBF6004D07EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189CA3391DDADBF6004D07EA /* GFBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		189CA33D1DDADBF6004D07EA /* GFBSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBSTests.m; sourceTree = "<group>"; };
+		189CA33F1DDADBF6004D07EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189CA3441DDADBF6004D07EA /* GFBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		189CA3481DDADBF6004D07EA /* GFBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBSUITests.m; sourceTree = "<group>"; };
+		189CA34A1DDADBF6004D07EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A23F791DEBDA5D001FC558 /* UIImage+GFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GFImage.h"; sourceTree = "<group>"; };
+		18A23F7A1DEBDA5D001FC558 /* UIImage+GFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GFImage.m"; sourceTree = "<group>"; };
+		18B3D6BD1DEC517F00474981 /* GFSeeBigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSeeBigImageViewController.h; sourceTree = "<group>"; };
+		18B3D6BE1DEC517F00474981 /* GFSeeBigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSeeBigImageViewController.m; sourceTree = "<group>"; };
+		18B3D6C01DEC518700474981 /* GFSeeBigImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFSeeBigImageViewController.xib; sourceTree = "<group>"; };
+		18B7C7211DE06F67004BD781 /* GFFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFFriendTrendViewController.xib; sourceTree = "<group>"; };
+		18B7C7231DE0717A004BD781 /* GFMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMemberViewController.h; sourceTree = "<group>"; };
+		18B7C7241DE0717A004BD781 /* GFMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFMemberViewController.m; sourceTree = "<group>"; };
+		18B7C7251DE0717A004BD781 /* GFMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFMemberViewController.xib; sourceTree = "<group>"; };
+		18B7C7281DE07501004BD781 /* GFLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFLoginRegisterView.h; sourceTree = "<group>"; };
+		18B7C7291DE07501004BD781 /* GFLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFLoginRegisterView.m; sourceTree = "<group>"; };
+		18B7C72B1DE07508004BD781 /* GFLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFLoginRegisterView.xib; sourceTree = "<group>"; };
+		18B7C72D1DE07C5A004BD781 /* GFFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFFastLoginView.h; sourceTree = "<group>"; };
+		18B7C72E1DE07C5A004BD781 /* GFFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFFastLoginView.m; sourceTree = "<group>"; };
+		18B7C7301DE07C62004BD781 /* GFFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFFastLoginView.xib; sourceTree = "<group>"; };
+		18B7C7321DE07FE7004BD781 /* GFFastButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFFastButton.h; sourceTree = "<group>"; };
+		18B7C7331DE07FE7004BD781 /* GFFastButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFFastButton.m; sourceTree = "<group>"; };
+		18B7C7351DE081BA004BD781 /* GFMemberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMemberField.h; sourceTree = "<group>"; };
+		18B7C7361DE081BA004BD781 /* GFMemberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFMemberField.m; sourceTree = "<group>"; };
+		18B7C7381DE08392004BD781 /* UITextField+GFPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+GFPlaceholder.h"; sourceTree = "<group>"; };
+		18B7C7391DE08392004BD781 /* UITextField+GFPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+GFPlaceholder.m"; sourceTree = "<group>"; };
+		18B7C73B1DE08620004BD781 /* GFSubTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFSubTagViewController.h; path = "../../Me(我)/Controller/GFSubTagViewController.h"; sourceTree = "<group>"; };
+		18B7C73C1DE08620004BD781 /* GFSubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFSubTagViewController.m; path = "../../Me(我)/Controller/GFSubTagViewController.m"; sourceTree = "<group>"; };
+		18BE02861DDB497A00D27893 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18BE02871DDB497A00D27893 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18BE029D1DDB4A7600D27893 /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNavigationController.h; sourceTree = "<group>"; };
+		18BE029E1DDB4A7600D27893 /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNavigationController.m; sourceTree = "<group>"; };
+		18BE02A01DDB4A8900D27893 /* GFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBarController.h; sourceTree = "<group>"; };
+		18BE02A11DDB4A8900D27893 /* GFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBarController.m; sourceTree = "<group>"; };
+		18BE02A31DDB4B0A00D27893 /* GFBS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFBS.pch; sourceTree = "<group>"; };
+		18BE02A41DDB4C0400D27893 /* GFEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFEssenceViewController.h; sourceTree = "<group>"; };
+		18BE02A51DDB4C0400D27893 /* GFEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFEssenceViewController.m; sourceTree = "<group>"; };
+		18BE02A71DDB4C0F00D27893 /* GFPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPublishViewController.h; sourceTree = "<group>"; };
+		18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPublishViewController.m; sourceTree = "<group>"; };
+		18BE02AA1DDB4C1E00D27893 /* GFFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFFriendTrendViewController.h; sourceTree = "<group>"; };
+		18BE02AB1DDB4C1E00D27893 /* GFFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFFriendTrendViewController.m; sourceTree = "<group>"; };
+		18BE02AD1DDB4C2A00D27893 /* GFNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewViewController.h; sourceTree = "<group>"; };
+		18BE02AE1DDB4C2A00D27893 /* GFNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNewViewController.m; sourceTree = "<group>"; };
+		18BE02B01DDB4C3900D27893 /* GFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMeViewController.h; sourceTree = "<group>"; };
+		18BE02B11DDB4C3900D27893 /* GFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFMeViewController.m; sourceTree = "<group>"; };
+		18BE02B31DDB6EB100D27893 /* GFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBar.h; sourceTree = "<group>"; };
+		18BE02B41DDB6EB100D27893 /* GFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBar.m; sourceTree = "<group>"; };
+		18C6FEA41DFBD96F00ED1195 /* GFRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecommendCategory.h; sourceTree = "<group>"; };
+		18C6FEA51DFBD96F00ED1195 /* GFRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecommendCategory.m; sourceTree = "<group>"; };
+		18C6FEA71DFBD99200ED1195 /* GFRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecommendUser.h; sourceTree = "<group>"; };
+		18C6FEA81DFBD99200ED1195 /* GFRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecommendUser.m; sourceTree = "<group>"; };
+		18C826271DE72630007341E3 /* GFTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTitleButton.h; sourceTree = "<group>"; };
+		18C826281DE72630007341E3 /* GFTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTitleButton.m; sourceTree = "<group>"; };
+		18C8262A1DE7368D007341E3 /* GFAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFAllViewController.h; sourceTree = "<group>"; };
+		18C8262B1DE7368D007341E3 /* GFAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFAllViewController.m; sourceTree = "<group>"; };
+		18C8262D1DE7369C007341E3 /* GFVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFVideoViewController.h; sourceTree = "<group>"; };
+		18C8262E1DE7369C007341E3 /* GFVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFVideoViewController.m; sourceTree = "<group>"; };
+		18C826331DE736B3007341E3 /* GFPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPictureViewController.h; sourceTree = "<group>"; };
+		18C826341DE736B3007341E3 /* GFPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPictureViewController.m; sourceTree = "<group>"; };
+		18C826361DE736C1007341E3 /* GFWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFWordViewController.h; sourceTree = "<group>"; };
+		18C826371DE736C1007341E3 /* GFWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFWordViewController.m; sourceTree = "<group>"; };
+		18C8263C1DE737C9007341E3 /* GFVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFVoiceViewController.h; sourceTree = "<group>"; };
+		18C8263D1DE737C9007341E3 /* GFVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFVoiceViewController.m; sourceTree = "<group>"; };
+		18D5AE691DF69F94003001D2 /* GFTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopWindow.h; sourceTree = "<group>"; };
+		18D5AE6A1DF69F94003001D2 /* GFTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopWindow.m; sourceTree = "<group>"; };
+		18D5AE6C1DF6A49A003001D2 /* GFTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopViewController.h; sourceTree = "<group>"; };
+		18D5AE6D1DF6A49A003001D2 /* GFTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopViewController.m; sourceTree = "<group>"; };
+		18E1D1371DF597F10015243E /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		18E1D1381DF597F10015243E /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		18E1D13A1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		18E1D13B1DF597F10015243E /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		18E8D3681DE9D19800ED4EE1 /* GFComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFComment.h; sourceTree = "<group>"; };
+		18E8D3691DE9D19800ED4EE1 /* GFComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFComment.m; sourceTree = "<group>"; };
+		18E8D36A1DE9D19800ED4EE1 /* GFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFUser.h; sourceTree = "<group>"; };
+		18E8D36B1DE9D19800ED4EE1 /* GFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFUser.m; sourceTree = "<group>"; };
+		18E8D36E1DE9EA4D00ED4EE1 /* GFTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopicPictureView.h; sourceTree = "<group>"; };
+		18E8D36F1DE9EA4D00ED4EE1 /* GFTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopicPictureView.m; sourceTree = "<group>"; };
+		18E8D3711DE9EA5700ED4EE1 /* GFTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFTopicPictureView.xib; sourceTree = "<group>"; };
+		18E8D3731DE9EA8400ED4EE1 /* GFTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopicVideoView.h; sourceTree = "<group>"; };
+		18E8D3741DE9EA8400ED4EE1 /* GFTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopicVideoView.m; sourceTree = "<group>"; };
+		18E8D3761DE9EA8E00ED4EE1 /* GFTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFTopicVideoView.xib; sourceTree = "<group>"; };
+		18E8D37D1DE9EB4100ED4EE1 /* GFTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopicVoiceView.h; sourceTree = "<group>"; };
+		18E8D37E1DE9EB4100ED4EE1 /* GFTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopicVoiceView.m; sourceTree = "<group>"; };
+		18E8D3801DE9EB4A00ED4EE1 /* GFTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFTopicVoiceView.xib; sourceTree = "<group>"; };
+		75348F53D54936CCC0AF8297 /* Pods-GFBS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFBS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFBS/Pods-GFBS.debug.xcconfig"; sourceTree = "<group>"; };
+		98E6B0D823E3CD7EDD43DDA3 /* Pods-GFBS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFBS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFBS/Pods-GFBS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189CA31D1DDADBF6004D07EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DF6B9C479499B133954DC1 /* libPods-GFBS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189CA3361DDADBF6004D07EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189CA3411DDADBF6004D07EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184D492A1DED5D5800C7B03F /* Comment(评论) */ = {
+			isa = PBXGroup;
+			children = (
+				184D492B1DED5D5800C7B03F /* Controller */,
+				184D492C1DED5D5800C7B03F /* Model */,
+				184D492D1DED5D5800C7B03F /* View */,
+			);
+			path = "Comment(评论)";
+			sourceTree = "<group>";
+		};
+		184D492B1DED5D5800C7B03F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184D49331DED5DBE00C7B03F /* GFCommentViewController.h */,
+				184D49341DED5DBE00C7B03F /* GFCommentViewController.m */,
+				184D49361DED5DC400C7B03F /* GFCommentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184D492C1DED5D5800C7B03F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184D492D1DED5D5800C7B03F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				182391441DEEC70500B88AE0 /* GFCommentHeaderFooterView.h */,
+				182391451DEEC70500B88AE0 /* GFCommentHeaderFooterView.m */,
+				1823914A1DEECDEB00B88AE0 /* GFCommentCell.h */,
+				1823914B1DEECDEB00B88AE0 /* GFCommentCell.m */,
+				1823914C1DEECDEB00B88AE0 /* GFCommentCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185420811DF064F1004F6378 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				185420821DF064F1004F6378 /* Controller */,
+				185420861DF064F1004F6378 /* Model */,
+				185420871DF064F1004F6378 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		185420821DF064F1004F6378 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185420831DF064F1004F6378 /* GFSettingViewController.h */,
+				185420841DF064F1004F6378 /* GFSettingViewController.m */,
+				185420851DF064F1004F6378 /* GFSettingViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185420861DF064F1004F6378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185420871DF064F1004F6378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		189CA3171DDADBF6004D07EA = {
+			isa = PBXGroup;
+			children = (
+				189CA3221DDADBF6004D07EA /* GFBS */,
+				189CA33C1DDADBF6004D07EA /* GFBSTests */,
+				189CA3471DDADBF6004D07EA /* GFBSUITests */,
+				189CA3211DDADBF6004D07EA /* Products */,
+				26374EE6FB20CA1C15F8B588 /* Pods */,
+				6F4DA860D03CDB4F1CA64D50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		189CA3211DDADBF6004D07EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189CA3201DDADBF6004D07EA /* GFBS.app */,
+				189CA3391DDADBF6004D07EA /* GFBSTests.xctest */,
+				189CA3441DDADBF6004D07EA /* GFBSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		189CA3221DDADBF6004D07EA /* GFBS */ = {
+			isa = PBXGroup;
+			children = (
+				18BE026C1DDB497900D27893 /* Class */,
+				189CA3231DDADBF6004D07EA /* Supporting Files */,
+			);
+			path = GFBS;
+			sourceTree = "<group>";
+		};
+		189CA3231DDADBF6004D07EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E1D1361DF597F10015243E /* LaunchImage */,
+				189CA32F1DDADBF6004D07EA /* Assets.xcassets */,
+				189CA3311DDADBF6004D07EA /* LaunchScreen.storyboard */,
+				189CA3341DDADBF6004D07EA /* Info.plist */,
+				189CA3241DDADBF6004D07EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		189CA33C1DDADBF6004D07EA /* GFBSTests */ = {
+			isa = PBXGroup;
+			children = (
+				189CA33D1DDADBF6004D07EA /* GFBSTests.m */,
+				189CA33F1DDADBF6004D07EA /* Info.plist */,
+			);
+			path = GFBSTests;
+			sourceTree = "<group>";
+		};
+		189CA3471DDADBF6004D07EA /* GFBSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				189CA3481DDADBF6004D07EA /* GFBSUITests.m */,
+				189CA34A1DDADBF6004D07EA /* Info.plist */,
+			);
+			path = GFBSUITests;
+			sourceTree = "<group>";
+		};
+		18BE026C1DDB497900D27893 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				18BE026D1DDB497900D27893 /* AD(广告) */,
+				18BE02791DDB497900D27893 /* Main(主要) */,
+				184D492A1DED5D5800C7B03F /* Comment(评论) */,
+				18BE02711DDB497900D27893 /* Essence(精华) */,
+				18BE02751DDB497900D27893 /* FriendTrend(关注) */,
+				18BE02891DDB497A00D27893 /* Publish(发布) */,
+				18BE02811DDB497900D27893 /* New(新帖) */,
+				18BE027D1DDB497900D27893 /* Me(我) */,
+				185420811DF064F1004F6378 /* Setting(设置) */,
+				18BE02851DDB497A00D27893 /* Others */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		18BE026D1DDB497900D27893 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE026E1DDB497900D27893 /* Controller */,
+				18BE026F1DDB497900D27893 /* Model */,
+				18BE02701DDB497900D27893 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		18BE026E1DDB497900D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1899804D1DDBF6B4009071F4 /* GFAdViewController.h */,
+				1899804E1DDBF6B4009071F4 /* GFAdViewController.m */,
+				1899804F1DDBF6B4009071F4 /* GFAdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE026F1DDB497900D27893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189980521DDBF6D2009071F4 /* GFAdItem.h */,
+				189980531DDBF6D2009071F4 /* GFAdItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BE02701DDB497900D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE02711DDB497900D27893 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02721DDB497900D27893 /* Controller */,
+				18BE02731DDB497900D27893 /* Model */,
+				18BE02741DDB497900D27893 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		18BE02721DDB497900D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02A41DDB4C0400D27893 /* GFEssenceViewController.h */,
+				18BE02A51DDB4C0400D27893 /* GFEssenceViewController.m */,
+				18C8262A1DE7368D007341E3 /* GFAllViewController.h */,
+				18C8262B1DE7368D007341E3 /* GFAllViewController.m */,
+				18C8262D1DE7369C007341E3 /* GFVideoViewController.h */,
+				18C8262E1DE7369C007341E3 /* GFVideoViewController.m */,
+				18C8263C1DE737C9007341E3 /* GFVoiceViewController.h */,
+				18C8263D1DE737C9007341E3 /* GFVoiceViewController.m */,
+				18C826331DE736B3007341E3 /* GFPictureViewController.h */,
+				18C826341DE736B3007341E3 /* GFPictureViewController.m */,
+				18C826361DE736C1007341E3 /* GFWordViewController.h */,
+				18C826371DE736C1007341E3 /* GFWordViewController.m */,
+				1801C3C11DEB1BA90073C6CD /* GFTopicViewController.h */,
+				1801C3C21DEB1BA90073C6CD /* GFTopicViewController.m */,
+				18B3D6BD1DEC517F00474981 /* GFSeeBigImageViewController.h */,
+				18B3D6BE1DEC517F00474981 /* GFSeeBigImageViewController.m */,
+				18B3D6C01DEC518700474981 /* GFSeeBigImageViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE02731DDB497900D27893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1829A69C1DE7E8390086AD86 /* GFTopic.h */,
+				1829A69D1DE7E8390086AD86 /* GFTopic.m */,
+				18E8D3681DE9D19800ED4EE1 /* GFComment.h */,
+				18E8D3691DE9D19800ED4EE1 /* GFComment.m */,
+				18E8D36A1DE9D19800ED4EE1 /* GFUser.h */,
+				18E8D36B1DE9D19800ED4EE1 /* GFUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BE02741DDB497900D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1829A6AB1DE8550D0086AD86 /* GFTopicCell.h */,
+				1829A6AC1DE8550D0086AD86 /* GFTopicCell.m */,
+				1829A6AD1DE8550D0086AD86 /* GFTopicCell.xib */,
+				18E8D36E1DE9EA4D00ED4EE1 /* GFTopicPictureView.h */,
+				18E8D36F1DE9EA4D00ED4EE1 /* GFTopicPictureView.m */,
+				18E8D3711DE9EA5700ED4EE1 /* GFTopicPictureView.xib */,
+				18E8D3731DE9EA8400ED4EE1 /* GFTopicVideoView.h */,
+				18E8D3741DE9EA8400ED4EE1 /* GFTopicVideoView.m */,
+				18E8D3761DE9EA8E00ED4EE1 /* GFTopicVideoView.xib */,
+				18E8D37D1DE9EB4100ED4EE1 /* GFTopicVoiceView.h */,
+				18E8D37E1DE9EB4100ED4EE1 /* GFTopicVoiceView.m */,
+				18E8D3801DE9EB4A00ED4EE1 /* GFTopicVoiceView.xib */,
+				18C826271DE72630007341E3 /* GFTitleButton.h */,
+				18C826281DE72630007341E3 /* GFTitleButton.m */,
+				1829A69F1DE818F70086AD86 /* GFRefreshHeader.h */,
+				1829A6A01DE818F70086AD86 /* GFRefreshHeader.m */,
+				1829A6A21DE82DCF0086AD86 /* GFRefreshFooter.h */,
+				1829A6A31DE82DCF0086AD86 /* GFRefreshFooter.m */,
+				1829A6A51DE83B9A0086AD86 /* GFHTTPSessionManager.h */,
+				1829A6A61DE83B9A0086AD86 /* GFHTTPSessionManager.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE02751DDB497900D27893 /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02761DDB497900D27893 /* Controller */,
+				18C6FEA31DFBD96F00ED1195 /* Model */,
+				18BE02781DDB497900D27893 /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		18BE02761DDB497900D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02AA1DDB4C1E00D27893 /* GFFriendTrendViewController.h */,
+				18BE02AB1DDB4C1E00D27893 /* GFFriendTrendViewController.m */,
+				18B7C7211DE06F67004BD781 /* GFFriendTrendViewController.xib */,
+				18B7C7231DE0717A004BD781 /* GFMemberViewController.h */,
+				18B7C7241DE0717A004BD781 /* GFMemberViewController.m */,
+				18B7C7251DE0717A004BD781 /* GFMemberViewController.xib */,
+				18388AD51DFAAF21004E1DF9 /* GFRecommendViewController.h */,
+				18388AD61DFAAF21004E1DF9 /* GFRecommendViewController.m */,
+				18388AD71DFAAF21004E1DF9 /* GFRecommendViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE02781DDB497900D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B7C7281DE07501004BD781 /* GFLoginRegisterView.h */,
+				18B7C7291DE07501004BD781 /* GFLoginRegisterView.m */,
+				18B7C72B1DE07508004BD781 /* GFLoginRegisterView.xib */,
+				18B7C72D1DE07C5A004BD781 /* GFFastLoginView.h */,
+				18B7C72E1DE07C5A004BD781 /* GFFastLoginView.m */,
+				18B7C7301DE07C62004BD781 /* GFFastLoginView.xib */,
+				18B7C7321DE07FE7004BD781 /* GFFastButton.h */,
+				18B7C7331DE07FE7004BD781 /* GFFastButton.m */,
+				18B7C7351DE081BA004BD781 /* GFMemberField.h */,
+				18B7C7361DE081BA004BD781 /* GFMemberField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE02791DDB497900D27893 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE027A1DDB497900D27893 /* Controller */,
+				18BE027B1DDB497900D27893 /* Model */,
+				18BE027C1DDB497900D27893 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		18BE027A1DDB497900D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BE029D1DDB4A7600D27893 /* GFNavigationController.h */,
+				18BE029E1DDB4A7600D27893 /* GFNavigationController.m */,
+				18BE02A01DDB4A8900D27893 /* GFTabBarController.h */,
+				18BE02A11DDB4A8900D27893 /* GFTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE027B1DDB497900D27893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BE027C1DDB497900D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02B31DDB6EB100D27893 /* GFTabBar.h */,
+				18BE02B41DDB6EB100D27893 /* GFTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE027D1DDB497900D27893 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE027E1DDB497900D27893 /* Controller */,
+				18BE027F1DDB497900D27893 /* Model */,
+				18BE02801DDB497900D27893 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		18BE027E1DDB497900D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02B01DDB4C3900D27893 /* GFMeViewController.h */,
+				18BE02B11DDB4C3900D27893 /* GFMeViewController.m */,
+				1841A7711DE16C1100FB54CC /* GFMeViewController.storyboard */,
+				1841A77B1DE17BE400FB54CC /* GFWebViewController.h */,
+				1841A77C1DE17BE400FB54CC /* GFWebViewController.m */,
+				1841A77D1DE17BE400FB54CC /* GFWebViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE027F1DDB497900D27893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1841A7731DE1750600FB54CC /* GFSquareItem.h */,
+				1841A7741DE1750600FB54CC /* GFSquareItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BE02801DDB497900D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1841A7761DE1752E00FB54CC /* GFSquareCell.h */,
+				1841A7771DE1752E00FB54CC /* GFSquareCell.m */,
+				1841A7781DE1752E00FB54CC /* GFSquareCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE02811DDB497900D27893 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02821DDB497900D27893 /* Controller */,
+				18BE02831DDB497900D27893 /* Model */,
+				18BE02841DDB497900D27893 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		18BE02821DDB497900D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02AD1DDB4C2A00D27893 /* GFNewViewController.h */,
+				18BE02AE1DDB4C2A00D27893 /* GFNewViewController.m */,
+				18B7C73B1DE08620004BD781 /* GFSubTagViewController.h */,
+				18B7C73C1DE08620004BD781 /* GFSubTagViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE02831DDB497900D27893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18388AD21DFAAB27004E1DF9 /* GFSubTagItem.h */,
+				18388AD31DFAAB27004E1DF9 /* GFSubTagItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BE02841DDB497900D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18388ACD1DFAAB1D004E1DF9 /* GFSubTagViewCell.h */,
+				18388ACE1DFAAB1D004E1DF9 /* GFSubTagViewCell.m */,
+				18388ACF1DFAAB1D004E1DF9 /* GFSubTagViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BE02851DDB497A00D27893 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02861DDB497A00D27893 /* AppDelegate.h */,
+				18BE02871DDB497A00D27893 /* AppDelegate.m */,
+				1829A6A81DE84CAF0086AD86 /* GFConst.h */,
+				1829A6A91DE84CAF0086AD86 /* GFConst.m */,
+				18BE02A31DDB4B0A00D27893 /* GFBS.pch */,
+				18BE02881DDB497A00D27893 /* Category */,
+				18D5AE691DF69F94003001D2 /* GFTopWindow.h */,
+				18D5AE6A1DF69F94003001D2 /* GFTopWindow.m */,
+				18D5AE6C1DF6A49A003001D2 /* GFTopViewController.h */,
+				18D5AE6D1DF6A49A003001D2 /* GFTopViewController.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		18BE02881DDB497A00D27893 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				189980471DDBEDA4009071F4 /* UIBarButtonItem+GFItem.h */,
+				189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */,
+				1899804A1DDBF33D009071F4 /* UIView+GFFrame.h */,
+				1899804B1DDBF33D009071F4 /* UIView+GFFrame.m */,
+				18B7C7381DE08392004BD781 /* UITextField+GFPlaceholder.h */,
+				18B7C7391DE08392004BD781 /* UITextField+GFPlaceholder.m */,
+				1802923D1DE98E3800743619 /* NSDate+GFExtension.h */,
+				1802923E1DE98E3800743619 /* NSDate+GFExtension.m */,
+				180292401DE990C700743619 /* NSCalendar+GFExtension.h */,
+				180292411DE990C700743619 /* NSCalendar+GFExtension.m */,
+				18A23F791DEBDA5D001FC558 /* UIImage+GFImage.h */,
+				18A23F7A1DEBDA5D001FC558 /* UIImage+GFImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18BE02891DDB497A00D27893 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				18BE028A1DDB497A00D27893 /* Controller */,
+				18BE028B1DDB497A00D27893 /* Model */,
+				18BE028C1DDB497A00D27893 /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		18BE028A1DDB497A00D27893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BE02A71DDB4C0F00D27893 /* GFPublishViewController.h */,
+				18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BE028B1DDB497A00D27893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BE028C1DDB497A00D27893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C6FEA31DFBD96F00ED1195 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18C6FEA41DFBD96F00ED1195 /* GFRecommendCategory.h */,
+				18C6FEA51DFBD96F00ED1195 /* GFRecommendCategory.m */,
+				18C6FEA71DFBD99200ED1195 /* GFRecommendUser.h */,
+				18C6FEA81DFBD99200ED1195 /* GFRecommendUser.m */,
+			);
+			name = Model;
+			path = Controller/Model;
+			sourceTree = "<group>";
+		};
+		18E1D1361DF597F10015243E /* LaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				18E1D1371DF597F10015243E /* LaunchImage-568h@2x.png */,
+				18E1D1381DF597F10015243E /* LaunchImage-700@2x.png */,
+				18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */,
+				18E1D13A1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png */,
+				18E1D13B1DF597F10015243E /* LaunchImage.png */,
+			);
+			path = LaunchImage;
+			sourceTree = "<group>";
+		};
+		26374EE6FB20CA1C15F8B588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75348F53D54936CCC0AF8297 /* Pods-GFBS.debug.xcconfig */,
+				98E6B0D823E3CD7EDD43DDA3 /* Pods-GFBS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6F4DA860D03CDB4F1CA64D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16F7F4458D42D3C1C1286EDF /* libPods-GFBS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		189CA31F1DDADBF6004D07EA /* GFBS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189CA34D1DDADBF6004D07EA /* Build configuration list for PBXNativeTarget "GFBS" */;
+			buildPhases = (
+				2F5FDC57D89144A486B85ACA /* [CP] Check Pods Manifest.lock */,
+				189CA31C1DDADBF6004D07EA /* Sources */,
+				189CA31D1DDADBF6004D07EA /* Frameworks */,
+				189CA31E1DDADBF6004D07EA /* Resources */,
+				7832944BFDD6A1BCA3C65EEF /* [CP] Embed Pods Frameworks */,
+				EF13E4F70CD6054F54CBEF09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GFBS;
+			productName = GFBS;
+			productReference = 189CA3201DDADBF6004D07EA /* GFBS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		189CA3381DDADBF6004D07EA /* GFBSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189CA3501DDADBF6004D07EA /* Build configuration list for PBXNativeTarget "GFBSTests" */;
+			buildPhases = (
+				189CA3351DDADBF6004D07EA /* Sources */,
+				189CA3361DDADBF6004D07EA /* Frameworks */,
+				189CA3371DDADBF6004D07EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189CA33B1DDADBF6004D07EA /* PBXTargetDependency */,
+			);
+			name = GFBSTests;
+			productName = GFBSTests;
+			productReference = 189CA3391DDADBF6004D07EA /* GFBSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		189CA3431DDADBF6004D07EA /* GFBSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189CA3531DDADBF6004D07EA /* Build configuration list for PBXNativeTarget "GFBSUITests" */;
+			buildPhases = (
+				189CA3401DDADBF6004D07EA /* Sources */,
+				189CA3411DDADBF6004D07EA /* Frameworks */,
+				189CA3421DDADBF6004D07EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189CA3461DDADBF6004D07EA /* PBXTargetDependency */,
+			);
+			name = GFBSUITests;
+			productName = GFBSUITests;
+			productReference = 189CA3441DDADBF6004D07EA /* GFBSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189CA3181DDADBF6004D07EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GF;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					189CA31F1DDADBF6004D07EA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2BU7DGY6CY;
+						ProvisioningStyle = Automatic;
+					};
+					189CA3381DDADBF6004D07EA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2BU7DGY6CY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 189CA31F1DDADBF6004D07EA;
+					};
+					189CA3431DDADBF6004D07EA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2BU7DGY6CY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 189CA31F1DDADBF6004D07EA;
+					};
+				};
+			};
+			buildConfigurationList = 189CA31B1DDADBF6004D07EA /* Build configuration list for PBXProject "GFBS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 189CA3171DDADBF6004D07EA;
+			productRefGroup = 189CA3211DDADBF6004D07EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189CA31F1DDADBF6004D07EA /* GFBS */,
+				189CA3381DDADBF6004D07EA /* GFBSTests */,
+				189CA3431DDADBF6004D07EA /* GFBSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189CA31E1DDADBF6004D07EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1841A7721DE16C1100FB54CC /* GFMeViewController.storyboard in Resources */,
+				189980511DDBF6B4009071F4 /* GFAdViewController.xib in Resources */,
+				18E1D13C1DF597F10015243E /* LaunchImage-568h@2x.png in Resources */,
+				18388AD11DFAAB1D004E1DF9 /* GFSubTagViewCell.xib in Resources */,
+				1841A77F1DE17BE400FB54CC /* GFWebViewController.xib in Resources */,
+				189CA3331DDADBF6004D07EA /* LaunchScreen.storyboard in Resources */,
+				18B7C72C1DE07508004BD781 /* GFLoginRegisterView.xib in Resources */,
+				18E8D3811DE9EB4A00ED4EE1 /* GFTopicVoiceView.xib in Resources */,
+				1823914E1DEECDEB00B88AE0 /* GFCommentCell.xib in Resources */,
+				18E1D1401DF597F10015243E /* LaunchImage.png in Resources */,
+				1841A77A1DE1752E00FB54CC /* GFSquareCell.xib in Resources */,
+				18B7C7311DE07C62004BD781 /* GFFastLoginView.xib in Resources */,
+				18B7C7271DE0717A004BD781 /* GFMemberViewController.xib in Resources */,
+				18E1D13D1DF597F10015243E /* LaunchImage-700@2x.png in Resources */,
+				18E1D13F1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				189CA3301DDADBF6004D07EA /* Assets.xcassets in Resources */,
+				18B3D6C11DEC518700474981 /* GFSeeBigImageViewController.xib in Resources */,
+				185420891DF064F1004F6378 /* GFSettingViewController.storyboard in Resources */,
+				1829A6AF1DE8550D0086AD86 /* GFTopicCell.xib in Resources */,
+				18E8D3721DE9EA5700ED4EE1 /* GFTopicPictureView.xib in Resources */,
+				18E8D3771DE9EA8E00ED4EE1 /* GFTopicVideoView.xib in Resources */,
+				18388AD91DFAAF21004E1DF9 /* GFRecommendViewController.xib in Resources */,
+				18B7C7221DE06F67004BD781 /* GFFriendTrendViewController.xib in Resources */,
+				184D49371DED5DC400C7B03F /* GFCommentViewController.xib in Resources */,
+				18E1D13E1DF597F10015243E /* LaunchImage-800-667h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189CA3371DDADBF6004D07EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189CA3421DDADBF6004D07EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F5FDC57D89144A486B85ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7832944BFDD6A1BCA3C65EEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GFBS/Pods-GFBS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF13E4F70CD6054F54CBEF09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GFBS/Pods-GFBS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189CA31C1DDADBF6004D07EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18388AD81DFAAF21004E1DF9 /* GFRecommendViewController.m in Sources */,
+				18BE02AC1DDB4C1E00D27893 /* GFFriendTrendViewController.m in Sources */,
+				18BE02A21DDB4A8900D27893 /* GFTabBarController.m in Sources */,
+				189CA3251DDADBF6004D07EA /* main.m in Sources */,
+				18D5AE6E1DF6A49A003001D2 /* GFTopViewController.m in Sources */,
+				180292421DE990C700743619 /* NSCalendar+GFExtension.m in Sources */,
+				18E8D36C1DE9D19800ED4EE1 /* GFComment.m in Sources */,
+				18A23F7B1DEBDA5D001FC558 /* UIImage+GFImage.m in Sources */,
+				18B3D6BF1DEC517F00474981 /* GFSeeBigImageViewController.m in Sources */,
+				18C8262F1DE7369C007341E3 /* GFVideoViewController.m in Sources */,
+				1823914D1DEECDEB00B88AE0 /* GFCommentCell.m in Sources */,
+				18B7C7261DE0717A004BD781 /* GFMemberViewController.m in Sources */,
+				18BE02A61DDB4C0400D27893 /* GFEssenceViewController.m in Sources */,
+				1802923F1DE98E3800743619 /* NSDate+GFExtension.m in Sources */,
+				18E8D3701DE9EA4D00ED4EE1 /* GFTopicPictureView.m in Sources */,
+				189980541DDBF6D2009071F4 /* GFAdItem.m in Sources */,
+				18B7C7371DE081BA004BD781 /* GFMemberField.m in Sources */,
+				1841A7791DE1752E00FB54CC /* GFSquareCell.m in Sources */,
+				18C6FEA61DFBD96F00ED1195 /* GFRecommendCategory.m in Sources */,
+				1801C3C31DEB1BA90073C6CD /* GFTopicViewController.m in Sources */,
+				18C826351DE736B3007341E3 /* GFPictureViewController.m in Sources */,
+				1829A6A11DE818F70086AD86 /* GFRefreshHeader.m in Sources */,
+				18B7C72A1DE07501004BD781 /* GFLoginRegisterView.m in Sources */,
+				18E8D37F1DE9EB4100ED4EE1 /* GFTopicVoiceView.m in Sources */,
+				1829A6A41DE82DCF0086AD86 /* GFRefreshFooter.m in Sources */,
+				18388AD41DFAAB27004E1DF9 /* GFSubTagItem.m in Sources */,
+				1829A69E1DE7E8390086AD86 /* GFTopic.m in Sources */,
+				18BE02B51DDB6EB100D27893 /* GFTabBar.m in Sources */,
+				1829A6AE1DE8550D0086AD86 /* GFTopicCell.m in Sources */,
+				18D5AE6B1DF69F94003001D2 /* GFTopWindow.m in Sources */,
+				18C6FEA91DFBD99200ED1195 /* GFRecommendUser.m in Sources */,
+				18B7C7341DE07FE7004BD781 /* GFFastButton.m in Sources */,
+				18BE02911DDB497A00D27893 /* AppDelegate.m in Sources */,
+				18B7C72F1DE07C5A004BD781 /* GFFastLoginView.m in Sources */,
+				18388AD01DFAAB1D004E1DF9 /* GFSubTagViewCell.m in Sources */,
+				1841A7751DE1750600FB54CC /* GFSquareItem.m in Sources */,
+				18BE029F1DDB4A7600D27893 /* GFNavigationController.m in Sources */,
+				18C8262C1DE7368D007341E3 /* GFAllViewController.m in Sources */,
+				18C8263E1DE737C9007341E3 /* GFVoiceViewController.m in Sources */,
+				189980491DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m in Sources */,
+				1841A77E1DE17BE400FB54CC /* GFWebViewController.m in Sources */,
+				182391461DEEC70500B88AE0 /* GFCommentHeaderFooterView.m in Sources */,
+				185420881DF064F1004F6378 /* GFSettingViewController.m in Sources */,
+				18BE02B21DDB4C3900D27893 /* GFMeViewController.m in Sources */,
+				184D49351DED5DBE00C7B03F /* GFCommentViewController.m in Sources */,
+				18BE02AF1DDB4C2A00D27893 /* GFNewViewController.m in Sources */,
+				18C826381DE736C1007341E3 /* GFWordViewController.m in Sources */,
+				18C826291DE72630007341E3 /* GFTitleButton.m in Sources */,
+				18B7C73A1DE08392004BD781 /* UITextField+GFPlaceholder.m in Sources */,
+				18BE02A91DDB4C0F00D27893 /* GFPublishViewController.m in Sources */,
+				1899804C1DDBF33D009071F4 /* UIView+GFFrame.m in Sources */,
+				18E8D36D1DE9D19800ED4EE1 /* GFUser.m in Sources */,
+				18E8D3751DE9EA8400ED4EE1 /* GFTopicVideoView.m in Sources */,
+				1829A6A71DE83B9A0086AD86 /* GFHTTPSessionManager.m in Sources */,
+				1829A6AA1DE84CAF0086AD86 /* GFConst.m in Sources */,
+				189980501DDBF6B4009071F4 /* GFAdViewController.m in Sources */,
+				18B7C73D1DE08620004BD781 /* GFSubTagViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189CA3351DDADBF6004D07EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189CA33E1DDADBF6004D07EA /* GFBSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		189CA3401DDADBF6004D07EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189CA3491DDADBF6004D07EA /* GFBSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189CA33B1DDADBF6004D07EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189CA31F1DDADBF6004D07EA /* GFBS */;
+			targetProxy = 189CA33A1DDADBF6004D07EA /* PBXContainerItemProxy */;
+		};
+		189CA3461DDADBF6004D07EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 189CA31F1DDADBF6004D07EA /* GFBS */;
+			targetProxy = 189CA3451DDADBF6004D07EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		189CA3311DDADBF6004D07EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189CA3321DDADBF6004D07EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		189CA34B1DDADBF6004D07EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		189CA34C1DDADBF6004D07EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		189CA34E1DDADBF6004D07EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75348F53D54936CCC0AF8297 /* Pods-GFBS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2BU7DGY6CY;
+				GCC_PREFIX_HEADER = GFBS/Class/Others/GFBS.pch;
+				INFOPLIST_FILE = GFBS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		189CA34F1DDADBF6004D07EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E6B0D823E3CD7EDD43DDA3 /* Pods-GFBS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2BU7DGY6CY;
+				GCC_PREFIX_HEADER = GFBS/Class/Others/GFBS.pch;
+				INFOPLIST_FILE = GFBS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		189CA3511DDADBF6004D07EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2BU7DGY6CY;
+				INFOPLIST_FILE = GFBSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFBS.app/GFBS";
+			};
+			name = Debug;
+		};
+		189CA3521DDADBF6004D07EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2BU7DGY6CY;
+				INFOPLIST_FILE = GFBSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFBS.app/GFBS";
+			};
+			name = Release;
+		};
+		189CA3541DDADBF6004D07EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2BU7DGY6CY;
+				INFOPLIST_FILE = GFBSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GFBS;
+			};
+			name = Debug;
+		};
+		189CA3551DDADBF6004D07EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2BU7DGY6CY;
+				INFOPLIST_FILE = GFBSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GFBS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189CA31B1DDADBF6004D07EA /* Build configuration list for PBXProject "GFBS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189CA34B1DDADBF6004D07EA /* Debug */,
+				189CA34C1DDADBF6004D07EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189CA34D1DDADBF6004D07EA /* Build configuration list for PBXNativeTarget "GFBS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189CA34E1DDADBF6004D07EA /* Debug */,
+				189CA34F1DDADBF6004D07EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189CA3501DDADBF6004D07EA /* Build configuration list for PBXNativeTarget "GFBSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189CA3511DDADBF6004D07EA /* Debug */,
+				189CA3521DDADBF6004D07EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189CA3531DDADBF6004D07EA /* Build configuration list for PBXNativeTarget "GFBSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189CA3541DDADBF6004D07EA /* Debug */,
+				189CA3551DDADBF6004D07EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189CA3181DDADBF6004D07EA /* Project object */;
+}
