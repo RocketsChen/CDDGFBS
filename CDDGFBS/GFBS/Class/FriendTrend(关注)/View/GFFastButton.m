@@ -10,6 +10,24 @@
 
 @implementation GFFastButton
 
+-(void)setUp
+{
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        [self setUp];
+    }
+    return self;
+}
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self setUp];
+}
+
 -(void)layoutSubviews
 {
     [super layoutSubviews];

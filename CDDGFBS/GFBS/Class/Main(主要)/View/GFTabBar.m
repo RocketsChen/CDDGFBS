@@ -7,6 +7,7 @@
 //
 
 #import "GFTabBar.h"
+#import "GFPublishViewController.h"
 
 @interface GFTabBar()
 @property (nonatomic,weak)UIButton *publishBtn;
@@ -26,6 +27,7 @@
         [button setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [button setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
         [self addSubview:button];
+        [button addTarget:self action:@selector(publishButtonClick) forControlEvents:UIControlEventTouchUpInside];
         /*******自适应**********/
         [button sizeToFit];
         _publishBtn = button;
@@ -73,5 +75,13 @@
     }
     
     self.previousClickedTabBarButton = tabBarButton;
+}
+/**
+ *  弹出发布控制器
+ */
+- (void)publishButtonClick
+{
+    GFPublishViewController *publishVc = [[GFPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVc animated:nil completion:nil];
 }
 @end

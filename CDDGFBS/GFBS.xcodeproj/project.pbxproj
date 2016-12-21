@@ -35,6 +35,7 @@
 		184D49371DED5DC400C7B03F /* GFCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184D49361DED5DC400C7B03F /* GFCommentViewController.xib */; };
 		185420881DF064F1004F6378 /* GFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185420841DF064F1004F6378 /* GFSettingViewController.m */; };
 		185420891DF064F1004F6378 /* GFSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185420851DF064F1004F6378 /* GFSettingViewController.storyboard */; };
+		1868100C1E0A96BA006454D0 /* GFPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1868100B1E0A96BA006454D0 /* GFPublishViewController.xib */; };
 		189980491DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */; };
 		1899804C1DDBF33D009071F4 /* UIView+GFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899804B1DDBF33D009071F4 /* UIView+GFFrame.m */; };
 		189980501DDBF6B4009071F4 /* GFAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899804E1DDBF6B4009071F4 /* GFAdViewController.m */; };
@@ -160,6 +161,7 @@
 		185420831DF064F1004F6378 /* GFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSettingViewController.h; sourceTree = "<group>"; };
 		185420841DF064F1004F6378 /* GFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSettingViewController.m; sourceTree = "<group>"; };
 		185420851DF064F1004F6378 /* GFSettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GFSettingViewController.storyboard; sourceTree = "<group>"; };
+		1868100B1E0A96BA006454D0 /* GFPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFPublishViewController.xib; sourceTree = "<group>"; };
 		189980471DDBEDA4009071F4 /* UIBarButtonItem+GFItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GFItem.h"; sourceTree = "<group>"; };
 		189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GFItem.m"; sourceTree = "<group>"; };
 		1899804A1DDBF33D009071F4 /* UIView+GFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GFFrame.h"; sourceTree = "<group>"; };
@@ -361,6 +363,13 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		186810001E0A9454006454D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		189CA3171DDADBF6004D07EA = {
@@ -716,6 +725,7 @@
 		18BE02851DDB497A00D27893 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				186810001E0A9454006454D0 /* Controller */,
 				18BE02861DDB497A00D27893 /* AppDelegate.h */,
 				18BE02871DDB497A00D27893 /* AppDelegate.m */,
 				1829A6A81DE84CAF0086AD86 /* GFConst.h */,
@@ -764,6 +774,7 @@
 			children = (
 				18BE02A71DDB4C0F00D27893 /* GFPublishViewController.h */,
 				18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */,
+				1868100B1E0A96BA006454D0 /* GFPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -957,6 +968,7 @@
 				1829A6AF1DE8550D0086AD86 /* GFTopicCell.xib in Resources */,
 				18E8D3721DE9EA5700ED4EE1 /* GFTopicPictureView.xib in Resources */,
 				18E8D3771DE9EA8E00ED4EE1 /* GFTopicVideoView.xib in Resources */,
+				1868100C1E0A96BA006454D0 /* GFPublishViewController.xib in Resources */,
 				18388AD91DFAAF21004E1DF9 /* GFRecommendViewController.xib in Resources */,
 				18B7C7221DE06F67004BD781 /* GFFriendTrendViewController.xib in Resources */,
 				184D49371DED5DC400C7B03F /* GFCommentViewController.xib in Resources */,
@@ -1237,7 +1249,7 @@
 				INFOPLIST_FILE = GFBS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBS;
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1253,7 +1265,7 @@
 				INFOPLIST_FILE = GFBS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBS;
+				PRODUCT_BUNDLE_IDENTIFIER = CDD.GFBSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
