@@ -7,7 +7,7 @@
 //
 
 #import "GFTabBar.h"
-#import "GFPublishViewController.h"
+#import "GFPublishView.h"
 
 @interface GFTabBar()
 @property (nonatomic,weak)UIButton *publishBtn;
@@ -81,7 +81,8 @@
  */
 - (void)publishButtonClick
 {
-    GFPublishViewController *publishVc = [[GFPublishViewController alloc] init];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVc animated:nil completion:nil];
+    GFPublishView *publishView = [GFPublishView gf_publishView];
+    [[UIApplication sharedApplication].keyWindow addSubview:publishView];
+    publishView.frame = [UIApplication sharedApplication].keyWindow.bounds;
 }
 @end

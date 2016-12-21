@@ -11,6 +11,6 @@ pod "Masonry"
 pod "SDCycleScrollView"
 pod "LTNavigationBar"
 pod "DACircularProgress"
-
+pod "pop"
 
 target :"GFBS"

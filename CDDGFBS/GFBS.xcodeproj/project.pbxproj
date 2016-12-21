@@ -35,7 +35,6 @@
 		184D49371DED5DC400C7B03F /* GFCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184D49361DED5DC400C7B03F /* GFCommentViewController.xib */; };
 		185420881DF064F1004F6378 /* GFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185420841DF064F1004F6378 /* GFSettingViewController.m */; };
 		185420891DF064F1004F6378 /* GFSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185420851DF064F1004F6378 /* GFSettingViewController.storyboard */; };
-		1868100C1E0A96BA006454D0 /* GFPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1868100B1E0A96BA006454D0 /* GFPublishViewController.xib */; };
 		189980491DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */; };
 		1899804C1DDBF33D009071F4 /* UIView+GFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899804B1DDBF33D009071F4 /* UIView+GFFrame.m */; };
 		189980501DDBF6B4009071F4 /* GFAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899804E1DDBF6B4009071F4 /* GFAdViewController.m */; };
@@ -64,7 +63,6 @@
 		18BE029F1DDB4A7600D27893 /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE029E1DDB4A7600D27893 /* GFNavigationController.m */; };
 		18BE02A21DDB4A8900D27893 /* GFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02A11DDB4A8900D27893 /* GFTabBarController.m */; };
 		18BE02A61DDB4C0400D27893 /* GFEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02A51DDB4C0400D27893 /* GFEssenceViewController.m */; };
-		18BE02A91DDB4C0F00D27893 /* GFPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */; };
 		18BE02AC1DDB4C1E00D27893 /* GFFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02AB1DDB4C1E00D27893 /* GFFriendTrendViewController.m */; };
 		18BE02AF1DDB4C2A00D27893 /* GFNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02AE1DDB4C2A00D27893 /* GFNewViewController.m */; };
 		18BE02B21DDB4C3900D27893 /* GFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE02B11DDB4C3900D27893 /* GFMeViewController.m */; };
@@ -84,6 +82,8 @@
 		18E1D13E1DF597F10015243E /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */; };
 		18E1D13F1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D13A1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png */; };
 		18E1D1401DF597F10015243E /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D13B1DF597F10015243E /* LaunchImage.png */; };
+		18E545DC1E0AE3AC005DBE74 /* GFPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E545DA1E0AE3AC005DBE74 /* GFPublishView.m */; };
+		18E545DD1E0AE3AC005DBE74 /* GFPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E545DB1E0AE3AC005DBE74 /* GFPublishView.xib */; };
 		18E8D36C1DE9D19800ED4EE1 /* GFComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D3691DE9D19800ED4EE1 /* GFComment.m */; };
 		18E8D36D1DE9D19800ED4EE1 /* GFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D36B1DE9D19800ED4EE1 /* GFUser.m */; };
 		18E8D3701DE9EA4D00ED4EE1 /* GFTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D36F1DE9EA4D00ED4EE1 /* GFTopicPictureView.m */; };
@@ -161,7 +161,6 @@
 		185420831DF064F1004F6378 /* GFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSettingViewController.h; sourceTree = "<group>"; };
 		185420841DF064F1004F6378 /* GFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSettingViewController.m; sourceTree = "<group>"; };
 		185420851DF064F1004F6378 /* GFSettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GFSettingViewController.storyboard; sourceTree = "<group>"; };
-		1868100B1E0A96BA006454D0 /* GFPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFPublishViewController.xib; sourceTree = "<group>"; };
 		189980471DDBEDA4009071F4 /* UIBarButtonItem+GFItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GFItem.h"; sourceTree = "<group>"; };
 		189980481DDBEDA4009071F4 /* UIBarButtonItem+GFItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GFItem.m"; sourceTree = "<group>"; };
 		1899804A1DDBF33D009071F4 /* UIView+GFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GFFrame.h"; sourceTree = "<group>"; };
@@ -214,8 +213,6 @@
 		18BE02A31DDB4B0A00D27893 /* GFBS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFBS.pch; sourceTree = "<group>"; };
 		18BE02A41DDB4C0400D27893 /* GFEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFEssenceViewController.h; sourceTree = "<group>"; };
 		18BE02A51DDB4C0400D27893 /* GFEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFEssenceViewController.m; sourceTree = "<group>"; };
-		18BE02A71DDB4C0F00D27893 /* GFPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPublishViewController.h; sourceTree = "<group>"; };
-		18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPublishViewController.m; sourceTree = "<group>"; };
 		18BE02AA1DDB4C1E00D27893 /* GFFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFFriendTrendViewController.h; sourceTree = "<group>"; };
 		18BE02AB1DDB4C1E00D27893 /* GFFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFFriendTrendViewController.m; sourceTree = "<group>"; };
 		18BE02AD1DDB4C2A00D27893 /* GFNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNewViewController.h; sourceTree = "<group>"; };
@@ -249,6 +246,9 @@
 		18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
 		18E1D13A1DF597F10015243E /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		18E1D13B1DF597F10015243E /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		18E545D91E0AE3AC005DBE74 /* GFPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPublishView.h; sourceTree = "<group>"; };
+		18E545DA1E0AE3AC005DBE74 /* GFPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPublishView.m; sourceTree = "<group>"; };
+		18E545DB1E0AE3AC005DBE74 /* GFPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFPublishView.xib; sourceTree = "<group>"; };
 		18E8D3681DE9D19800ED4EE1 /* GFComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFComment.h; sourceTree = "<group>"; };
 		18E8D3691DE9D19800ED4EE1 /* GFComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFComment.m; sourceTree = "<group>"; };
 		18E8D36A1DE9D19800ED4EE1 /* GFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFUser.h; sourceTree = "<group>"; };
@@ -772,9 +772,9 @@
 		18BE028A1DDB497A00D27893 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18BE02A71DDB4C0F00D27893 /* GFPublishViewController.h */,
-				18BE02A81DDB4C0F00D27893 /* GFPublishViewController.m */,
-				1868100B1E0A96BA006454D0 /* GFPublishViewController.xib */,
+				18E545D91E0AE3AC005DBE74 /* GFPublishView.h */,
+				18E545DA1E0AE3AC005DBE74 /* GFPublishView.m */,
+				18E545DB1E0AE3AC005DBE74 /* GFPublishView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -952,6 +952,7 @@
 				18E1D13C1DF597F10015243E /* LaunchImage-568h@2x.png in Resources */,
 				18388AD11DFAAB1D004E1DF9 /* GFSubTagViewCell.xib in Resources */,
 				1841A77F1DE17BE400FB54CC /* GFWebViewController.xib in Resources */,
+				18E545DD1E0AE3AC005DBE74 /* GFPublishView.xib in Resources */,
 				189CA3331DDADBF6004D07EA /* LaunchScreen.storyboard in Resources */,
 				18B7C72C1DE07508004BD781 /* GFLoginRegisterView.xib in Resources */,
 				18E8D3811DE9EB4A00ED4EE1 /* GFTopicVoiceView.xib in Resources */,
@@ -968,7 +969,6 @@
 				1829A6AF1DE8550D0086AD86 /* GFTopicCell.xib in Resources */,
 				18E8D3721DE9EA5700ED4EE1 /* GFTopicPictureView.xib in Resources */,
 				18E8D3771DE9EA8E00ED4EE1 /* GFTopicVideoView.xib in Resources */,
-				1868100C1E0A96BA006454D0 /* GFPublishViewController.xib in Resources */,
 				18388AD91DFAAF21004E1DF9 /* GFRecommendViewController.xib in Resources */,
 				18B7C7221DE06F67004BD781 /* GFFriendTrendViewController.xib in Resources */,
 				184D49371DED5DC400C7B03F /* GFCommentViewController.xib in Resources */,
@@ -1065,6 +1065,7 @@
 				1841A7791DE1752E00FB54CC /* GFSquareCell.m in Sources */,
 				18C6FEA61DFBD96F00ED1195 /* GFRecommendCategory.m in Sources */,
 				1801C3C31DEB1BA90073C6CD /* GFTopicViewController.m in Sources */,
+				18E545DC1E0AE3AC005DBE74 /* GFPublishView.m in Sources */,
 				18C826351DE736B3007341E3 /* GFPictureViewController.m in Sources */,
 				1829A6A11DE818F70086AD86 /* GFRefreshHeader.m in Sources */,
 				18B7C72A1DE07501004BD781 /* GFLoginRegisterView.m in Sources */,
@@ -1094,7 +1095,6 @@
 				18C826381DE736C1007341E3 /* GFWordViewController.m in Sources */,
 				18C826291DE72630007341E3 /* GFTitleButton.m in Sources */,
 				18B7C73A1DE08392004BD781 /* UITextField+GFPlaceholder.m in Sources */,
-				18BE02A91DDB4C0F00D27893 /* GFPublishViewController.m in Sources */,
 				1899804C1DDBF33D009071F4 /* UIView+GFFrame.m in Sources */,
 				18E8D36D1DE9D19800ED4EE1 /* GFUser.m in Sources */,
 				18E8D3751DE9EA8400ED4EE1 /* GFTopicVideoView.m in Sources */,
