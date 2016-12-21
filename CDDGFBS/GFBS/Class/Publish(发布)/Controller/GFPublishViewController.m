@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //标语
+    //标语slogan
     UIImageView *titleImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"app_slogan"]];
     titleImageView.gf_y = GFScreenHeight * 0.15;
     titleImageView.gf_centerX = GFScreenWidth * 0.5;
