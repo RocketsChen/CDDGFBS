@@ -25,7 +25,7 @@
     [self.view addSubview:titleImageView];
     
     
-    //中间按钮
+    //中间按钮处理
     NSArray *titles = @[@"发视频",@"发图片",@"发段子",@"发声音",@"审帖子",@"离线下载"];
     NSArray *images = @[@"publish-video",@"publish-picture",@"publish-text",@"publish-audio",@"publish-review",@"publish-offline"];
     CGFloat buttonW = 72;
@@ -48,7 +48,6 @@
         NSInteger col = i % maxCols;
         button.frame = CGRectMake(buttonStratX + col * (buttonW + buttonXMargin), buttonStratY + row * (buttonH + buttonYMargin), buttonW, buttonH);
         [self.view addSubview:button];
-        
     }
     
     
