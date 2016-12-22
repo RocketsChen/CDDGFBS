@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GFAddToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yj1-go-B8y" userLabel="top">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-ld-OcW" userLabel="bottom">
+                    <rect key="frame" x="0.0" y="54" width="375" height="35"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ZRK-20-XvH"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar-light" translatesAutoresizingMaskIntoConstraints="NO" id="wWU-xJ-hLq">
+                    <rect key="frame" x="0.0" y="54" width="375" height="35"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91w-IK-r0a">
+                    <rect key="frame" x="0.0" y="54" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="Psw-QI-Ut6"/>
+                    </constraints>
+                    <state key="normal" image="post-@"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odP-k4-PNl">
+                    <rect key="frame" x="35" y="54" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="jvu-Ak-TGu"/>
+                    </constraints>
+                    <state key="normal" image="post-#"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="odP-k4-PNl" secondAttribute="bottom" id="07B-ci-9cz"/>
+                <constraint firstItem="Jn8-ld-OcW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4ho-p1-uvc"/>
+                <constraint firstAttribute="trailing" secondItem="Yj1-go-B8y" secondAttribute="trailing" id="6hh-kJ-vqO"/>
+                <constraint firstItem="Yj1-go-B8y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DfX-sq-Pkb"/>
+                <constraint firstAttribute="bottom" secondItem="wWU-xJ-hLq" secondAttribute="bottom" id="GIi-mZ-yQo"/>
+                <constraint firstItem="Jn8-ld-OcW" firstAttribute="top" secondItem="Yj1-go-B8y" secondAttribute="bottom" id="Hbr-K7-NoW"/>
+                <constraint firstAttribute="bottom" secondItem="Jn8-ld-OcW" secondAttribute="bottom" id="M4i-ak-lyk"/>
+                <constraint firstItem="wWU-xJ-hLq" firstAttribute="top" secondItem="Yj1-go-B8y" secondAttribute="bottom" id="QqI-5z-MAl"/>
+                <constraint firstAttribute="trailing" secondItem="wWU-xJ-hLq" secondAttribute="trailing" id="Un4-nL-ljA"/>
+                <constraint firstAttribute="trailing" secondItem="Jn8-ld-OcW" secondAttribute="trailing" id="Wln-cm-x2i"/>
+                <constraint firstItem="odP-k4-PNl" firstAttribute="top" secondItem="Yj1-go-B8y" secondAttribute="bottom" id="Ytg-EI-gGC"/>
+                <constraint firstItem="91w-IK-r0a" firstAttribute="top" secondItem="Yj1-go-B8y" secondAttribute="bottom" id="cFh-AU-s8p"/>
+                <constraint firstAttribute="bottom" secondItem="91w-IK-r0a" secondAttribute="bottom" id="ktU-iV-SC8"/>
+                <constraint firstItem="Yj1-go-B8y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ldC-qa-PQs"/>
+                <constraint firstItem="91w-IK-r0a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v3o-Df-FxL"/>
+                <constraint firstItem="wWU-xJ-hLq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vEK-3N-mFt"/>
+                <constraint firstItem="odP-k4-PNl" firstAttribute="leading" secondItem="91w-IK-r0a" secondAttribute="trailing" id="zo0-j9-4VF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topView" destination="Yj1-go-B8y" id="cUr-hG-tFb"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-100.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#" width="19" height="19"/>
+        <image name="post-@" width="19" height="19"/>
+        <image name="tabbar-light" width="320" height="49"/>
+    </resources>
+</document>

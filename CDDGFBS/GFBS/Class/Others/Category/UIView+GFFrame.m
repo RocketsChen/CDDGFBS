@@ -10,6 +10,19 @@
 
 @implementation UIView (GFFrame)
 
+
+-(CGSize)gf_size
+{
+    return self.frame.size;
+}
+
+-(void)setGf_size:(CGSize)gf_size
+{
+    CGRect gf = self.frame;
+    gf.size = gf_size;
+    self.frame = gf;
+}
+
 -(CGFloat)gf_height
 {
     return self.frame.size.height;

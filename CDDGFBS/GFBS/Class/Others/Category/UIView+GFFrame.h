@@ -14,6 +14,7 @@
  
  */
 
+@property CGSize gf_size;
 
 @property CGFloat gf_width;
 

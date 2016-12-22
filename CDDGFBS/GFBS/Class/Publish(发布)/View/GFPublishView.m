@@ -7,6 +7,8 @@
 //
 
 #import "GFPublishView.h"
+#import "GFPostWordViewController.h"
+#import "GFNavigationController.h"
 #import "GFFastButton.h" 
 #import <POP.h>
 
@@ -135,17 +137,23 @@
 {
     NSArray *titles = @[@"发视频",@"发图片",@"发段子",@"发声音",@"审帖子",@"离线下载"];
     [self cancelWithCompletionBlock:^{
-        if (button.tag == 1) {
+        if (button.tag == 0) {
+            GFBSLog(@"点击%@",titles[button.tag]);
+        }else if (button.tag == 1){
             GFBSLog(@"点击%@",titles[button.tag]);
         }else if (button.tag == 2){
+            //点击了发段子
+            GFPostWordViewController *postWord = [[GFPostWordViewController alloc] init];
+            GFNavigationController *nav = [[GFNavigationController alloc]initWithRootViewController:postWord];
+            UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+            [root presentViewController:nav animated:YES completion:nil];
+            
             GFBSLog(@"点击%@",titles[button.tag]);
         }else if (button.tag == 3){
             GFBSLog(@"点击%@",titles[button.tag]);
         }else if (button.tag == 4){
             GFBSLog(@"点击%@",titles[button.tag]);
         }else if (button.tag == 5){
-            GFBSLog(@"点击%@",titles[button.tag]);
-        }else if (button.tag == 6){
             GFBSLog(@"点击%@",titles[button.tag]);
         }
     }];

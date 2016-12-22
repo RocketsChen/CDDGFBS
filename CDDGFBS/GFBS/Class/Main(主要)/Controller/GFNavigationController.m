@@ -27,6 +27,17 @@
     
     //设置背景图片
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    
+    //设置item的字体和颜色
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    NSMutableDictionary *itemDict = [NSMutableDictionary dictionary];
+    itemDict[NSForegroundColorAttributeName] = [UIColor blackColor];
+    itemDict[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    [item setTitleTextAttributes:itemDict forState:UIControlStateNormal];
+    
+    NSMutableDictionary *itemDisableDict = [NSMutableDictionary dictionary];
+    itemDisableDict[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [item setTitleTextAttributes:itemDisableDict  forState:UIControlStateDisabled];
 }
 
 - (void)viewDidLoad {
