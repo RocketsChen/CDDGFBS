@@ -5,6 +5,10 @@
 
 /*常用数*/
 UIKIT_EXTERN CGFloat const GFMargin;
+/*标签间隔*/
+UIKIT_EXTERN CGFloat const GFTagMargin;
+/*标签高度*/
+UIKIT_EXTERN CGFloat const GFTagHeight;
 /*头像高*/
 UIKIT_EXTERN CGFloat const GFiconH;
 /*底部评论，分享，顶，踩 高*/

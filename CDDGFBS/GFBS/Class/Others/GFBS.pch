@@ -62,6 +62,10 @@
 /*****************  全局背景色  ******************/
 #define GFBgColor  [UIColor colorWithRed:(206/255.0) green:(206/255.0) blue:(206/255.0) alpha:1.0]
 
+/*****************  tag景色  ******************/
+#define GFTagBgColor  [UIColor colorWithRed:74 / 255.0 green:139 / 255.0 blue:209 / 255.0 alpha:1.0]
+/*****************  tag字体尺寸  ******************/
+#define GFTagFont [UIFont systemFontOfSize:14]
 
 /*****************  系统适配  ******************/
 #define GFIOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= (version))

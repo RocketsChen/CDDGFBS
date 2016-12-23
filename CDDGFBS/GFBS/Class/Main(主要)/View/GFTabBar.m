@@ -84,5 +84,6 @@
     GFPublishView *publishView = [GFPublishView gf_publishView];
     [[UIApplication sharedApplication].keyWindow addSubview:publishView];
     publishView.frame = [UIApplication sharedApplication].keyWindow.bounds;
+    
 }
 @end

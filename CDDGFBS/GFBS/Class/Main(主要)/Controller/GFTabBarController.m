@@ -11,6 +11,7 @@
 
 #import "GFMeViewController.h"
 #import "GFEssenceViewController.h"
+#import "GFPublishView.h"
 #import "GFNewViewController.h"
 #import "GFFriendTrendViewController.h"
 

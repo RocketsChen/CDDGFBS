@@ -19,13 +19,13 @@
  */
 +(void)load
 {
-    //设置字体
+    //设置bar字体
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[NSFontAttributeName] = [UIFont systemFontOfSize:18];
+    dict[NSFontAttributeName] = [UIFont boldSystemFontOfSize:18];
     [bar setTitleTextAttributes:dict];
     
-    //设置背景图片
+    //设置bar背景图片
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     
     //设置item的字体和颜色

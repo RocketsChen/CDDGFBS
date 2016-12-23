@@ -7,6 +7,7 @@
 //
 
 #import "GFPostWordViewController.h"
+
 #import "GFPlaceholderTextView.h"
 #import "GFAddToolBar.h"
 
@@ -19,6 +20,7 @@
 
 @implementation GFPostWordViewController
 
+#pragma mark - 初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -32,7 +34,7 @@
 - (void)setUpToolBar
 {
     GFAddToolBar *toolBar = [GFAddToolBar gf_toolbar];
-    _toolBar = toolBar;
+    self.toolBar = toolBar;
     [self.view addSubview:toolBar];
     
     //通知
@@ -57,8 +59,8 @@
 {
     [super viewDidLayoutSubviews];
     
-    _toolBar.gf_width = GFScreenWidth;
-    _toolBar.gf_y = GFScreenHeight - _toolBar.gf_height;
+    _toolBar.gf_width = self.view.gf_width;
+    _toolBar.gf_y = self.view.gf_height - _toolBar.gf_height;
     
 }
 
@@ -90,7 +92,7 @@
 
 - (void)post
 {
-    
+
 }
 
 #pragma mark - 监听文字改变
@@ -102,6 +104,26 @@
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
+    [self.view endEditing:YES];
+}
+
+
+#pragma mark - 键盘弹出和退出
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // 先退出之前的键盘
+    [self.view endEditing:YES];
+    // 再叫出键盘
+    [self.textView becomeFirstResponder];
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
     [self.view endEditing:YES];
 }
 

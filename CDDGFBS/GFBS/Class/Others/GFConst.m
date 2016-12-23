@@ -5,6 +5,12 @@
 /*常用数*/
 CGFloat const GFMargin = 10;
 
+/*标签间隔*/
+CGFloat const GFTagMargin = 5;
+
+/*标签高度*/
+CGFloat const GFTagHeight = 25;
+
 /*头像高*/
 CGFloat const GFiconH = 55;
 /*底部View(评论，分享，顶，踩) 高*/
