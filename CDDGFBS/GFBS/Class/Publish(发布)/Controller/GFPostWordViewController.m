@@ -92,7 +92,7 @@
 
 - (void)post
 {
-
+    GFBSLog(@"点击发布");
 }
 
 #pragma mark - 监听文字改变

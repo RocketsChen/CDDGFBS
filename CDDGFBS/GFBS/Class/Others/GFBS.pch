@@ -40,10 +40,10 @@
 #ifdef DEBUG//调试
 #define GFBSLog(...) NSLog(__VA_ARGS__)
 #else//发布
-#define GFBSLog(...);
+#define GFBSLog(...)
 #endif
 
-#define GFBSLogFunc GFBSLog(@"%s", __func__); //打印
+#define GFBSLogFunc GFBSLog(@"%s", __func__) //打印
 
 /*****************  屏幕宽高  ******************/
 #define  GFScreenHeight [UIScreen mainScreen].bounds.size.height
