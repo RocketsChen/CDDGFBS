@@ -82,6 +82,15 @@
 }
 
 #pragma mark - 基本设置
+
+- (void)setUpBase
+{
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"添加标签";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(done)];
+}
+
+#pragma mark - 初始化ContentView和TextField
 - (void)setUpContentView
 {
     UIView *contentView = [[UIView alloc] init];
@@ -104,17 +113,9 @@
     [textField addTarget:self action:@selector(textFieldContentDidChange) forControlEvents:UIControlEventEditingChanged];
     [_contentView addSubview:textField];
     _textField = textField;
-    
 
 }
 
-
-- (void)setUpBase
-{
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"添加标签";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(done)];
-}
 
 #pragma mark - 点击完成按钮事件
 - (void)done

@@ -67,7 +67,7 @@
 - (void)setUpTextView
 {
     GFPlaceholderTextView *textView = [[GFPlaceholderTextView alloc] init];
-    textView.placeholder = @"把好玩的图片，好笑的段子或糗事发到这里，接受千万网友膜拜吧!";
+    textView.placeholder = @"把好玩的图片，好笑的段子或糗事发到这里，接受千万网友膜拜吧!😁";
     textView.frame = self.view.bounds;
     textView.delegate = self;
     [self.view addSubview:textView];
@@ -85,14 +85,20 @@
     [self.navigationController.navigationBar layoutIfNeeded]; //强制刷新
 }
 
+
+/**
+ 退出当前界面
+ */
 - (void)cancel
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+/**
+ 点击发表
+ */
 - (void)post
 {
-    GFBSLog(@"点击发布");
+    GFBSLog(@"点击发表");
 }
 
 #pragma mark - 监听文字改变
@@ -101,12 +107,6 @@
     //发表点击判断
     self.navigationItem.rightBarButtonItem.enabled = textView.hasText;
 }
-
--(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    [self.view endEditing:YES];
-}
-
 
 #pragma mark - 键盘弹出和退出
 - (void)viewDidAppear:(BOOL)animated
@@ -119,6 +119,10 @@
     [self.textView becomeFirstResponder];
 }
 
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self.view endEditing:YES];
+}
 
 -(void)viewWillDisappear:(BOOL)animated
 {

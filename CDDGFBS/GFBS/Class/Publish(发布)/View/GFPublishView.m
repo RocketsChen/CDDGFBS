@@ -21,11 +21,7 @@
 
 @implementation GFPublishView
 
-+(instancetype)gf_publishView
-{
-    return [[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
-}
-
+#pragma mark - 初始化
 - (void)awakeFromNib {
     [super awakeFromNib];
     //窗口View不可以点击
@@ -162,9 +158,19 @@
 }
 
 
+/**
+ 点击屏幕空白处，退出界面
+ */
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self cancelWithCompletionBlock:nil];
 }
+
+
++(instancetype)gf_publishView
+{
+    return [[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+}
+
 
 @end
