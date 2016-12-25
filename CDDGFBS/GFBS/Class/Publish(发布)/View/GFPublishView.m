@@ -49,15 +49,14 @@
         button.titleLabel.font = [UIFont systemFontOfSize:14];
         
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-        //计算
+        
+        //计算Frame
         NSInteger row = i / maxCols;
         NSInteger col = i % maxCols;
         CGFloat buttonX = buttonStratX + col * (buttonW + buttonXMargin);
         CGFloat buttonEndY = buttonStratY + row * (buttonH + buttonYMargin);
         CGFloat buttonBeginY = buttonEndY - GFScreenHeight;
-//        button.frame = CGRectMake(buttonStratX + col * (buttonW + buttonXMargin), buttonStratY + row * (buttonH + buttonYMargin), buttonW, buttonH);
         [self addSubview:button];
-        
         
         //添加动画
         POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
