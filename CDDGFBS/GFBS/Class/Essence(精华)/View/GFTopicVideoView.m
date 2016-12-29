@@ -12,6 +12,12 @@
 #import <UIImageView+WebCache.h>
 #import "GFSeeBigImageViewController.h"
 
+//苹果自带播放视频框架
+#import <AVFoundation/AVFoundation.h>
+#import <AFNetworkReachabilityManager.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVKit/AVKit.h>
+
 @interface GFTopicVideoView()
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *videoTimeLabel;
@@ -63,9 +69,25 @@
     NSInteger second = topic.videotime % 60;
     //%02zd - 占据两位 空出来用0来填补
     self.videoTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",minute,second];
-    
-    
 }
 
+/** 点击按钮开始播放视频 */
+- (IBAction)butttonDidClickPlay:(id)sender {
+    
+    NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+    if ([systemVersion integerValue] < 9) {
+        /// IOS9之前的做法
+        MPMoviePlayerViewController *movieVC = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:self.topic.videouri]];
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentMoviePlayerViewControllerAnimated:movieVC];
+    }else
+    {
+        /// iOS9的做法
+        AVPlayer *player = [AVPlayer playerWithURL:[NSURL URLWithString:self.topic.videouri]];
+        AVPlayerViewController *playerVC = [[AVPlayerViewController alloc] init];
+        playerVC.player = player;
+        [playerVC.player play];
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:playerVC animated:YES completion:nil];
+    }
+}
 
 @end

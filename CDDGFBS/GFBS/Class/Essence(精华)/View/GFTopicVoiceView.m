@@ -13,12 +13,25 @@
 #import <UIImageView+WebCache.h>
 #import "GFTopic.h"
 
+//苹果自带播放音频
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+
 @interface GFTopicVoiceView()
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *voiceTimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *voiceImageView;
 
+/** 上一个按钮 */
+@property (weak, nonatomic) UIButton *lastPlayButton;
+/** 播放按钮 */
+@property (weak, nonatomic) IBOutlet UIButton *voicePlayButton;
+
 @end
+
+static AVPlayer * player_;
+static UIButton *lastPlayButton_;
+static GFTopic *lastTopic_;
 
 @implementation GFTopicVoiceView
 
@@ -32,7 +45,6 @@
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(seeBigImage)];
     self.voiceImageView.userInteractionEnabled = YES;
     [self.voiceImageView addGestureRecognizer:gesture];
-    
 }
 
 /**
@@ -63,6 +75,47 @@
     
     self.voiceTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",minute,second];
     
+    //播放按钮设置
+    [self.voicePlayButton setImage:[UIImage imageNamed:topic.voicePlaying ? @"playButtonPause":@"playButtonPlay"] forState:UIControlStateNormal];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 初始化player
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:self.topic.voiceuri]];
+        player_ = [AVPlayer playerWithPlayerItem:playerItem];
+    });
+    
 }
 
+/** 点击按钮开始播放声音 */
+- (IBAction)buttonDidClickPlaySound:(UIButton *)playButton {
+    playButton.selected = !playButton.isSelected;
+    lastPlayButton_.selected = !lastPlayButton_.isSelected;
+    if (lastTopic_ != self.topic) {
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:self.topic.voiceuri]];
+        
+        [player_ replaceCurrentItemWithPlayerItem:playerItem];
+        [player_ play];
+        lastTopic_.voicePlaying = NO;
+        self.topic.voicePlaying = YES;
+        
+        [lastPlayButton_ setImage:[UIImage imageNamed:@"playButtonPlay"] forState:UIControlStateNormal];
+        [playButton setImage:[UIImage imageNamed:@"playButtonPause"] forState:UIControlStateNormal];
+        
+    }else{
+        if(lastTopic_.voicePlaying){
+            [player_ pause];
+            self.topic.voicePlaying = NO;
+            [playButton setImage:[UIImage imageNamed:@"playButtonPlay"] forState:UIControlStateNormal];
+        }else{
+            [player_ play];
+            self.topic.voicePlaying = YES;
+            [playButton setImage:[UIImage imageNamed:@"playButtonPause"] forState:UIControlStateNormal];
+        }
+    }
+    lastTopic_ = self.topic;
+    lastPlayButton_ = playButton;
+}
+
+
 @end
+

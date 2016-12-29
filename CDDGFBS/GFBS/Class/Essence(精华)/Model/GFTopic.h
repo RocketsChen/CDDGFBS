@@ -82,6 +82,10 @@ typedef NS_ENUM(NSInteger , GFTopicType){
 /** 声音时长 */
 @property (nonatomic, assign) NSInteger voicetime;
 
+/** 视频播放的url地址 */
+@property (nonatomic,copy) NSString *videouri;
+/** 音频的url */
+@property (nonatomic,copy) NSString *voiceuri;
 
 /*****额外增加的属性*****/
 
@@ -90,7 +94,8 @@ typedef NS_ENUM(NSInteger , GFTopicType){
 /** 中间内容的Frame */
 @property (nonatomic, assign) CGRect middleF;
 
-
+/** 声音是否在播放 */
+@property (nonatomic, assign,getter=is_voicePlaying) BOOL voicePlaying;
 
 
 
