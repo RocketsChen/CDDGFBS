@@ -48,7 +48,7 @@ static GFTopic *lastTopic_;
 }
 
 /**
- 查看大图
+ 查看大图 
  */
 -(void)seeBigImage
 {
