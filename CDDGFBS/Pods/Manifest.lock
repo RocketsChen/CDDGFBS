@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - DACircularProgress (2.3.1)
   - DOPDropDownMenu-Enhanced (1.0.0)
-  - LTNavigationBar (2.1.8)
+  - LTNavigationBar (2.1.9)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
@@ -45,7 +45,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DOPDropDownMenu-Enhanced: 9ec473b16351b5b0b2d6ef87e7f666fe5ff54ad5
-  LTNavigationBar: 04d302e25a18016487c0dff408c39f533cb30118
+  LTNavigationBar: c278785bed344862e18146b5f06792932e4feacc
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
