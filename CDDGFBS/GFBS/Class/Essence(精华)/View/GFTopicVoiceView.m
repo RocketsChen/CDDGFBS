@@ -66,6 +66,8 @@ static GFTopic *lastTopic_;
     
     if ([topic.playcount integerValue]>10000) {
         self.playCountLabel.text = [NSString stringWithFormat:@"%.1f万次播放",[topic.playcount integerValue] / 10000.0];
+    }else if ([topic.playcount integerValue] < 0){
+        self.playCountLabel.text = @"暂无播放";
     }else{
         self.playCountLabel.text = [NSString stringWithFormat:@"%zd次播放",topic.playcount];
     }

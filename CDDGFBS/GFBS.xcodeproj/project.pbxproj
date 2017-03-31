@@ -23,7 +23,6 @@
 		1829A6A11DE818F70086AD86 /* GFRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A01DE818F70086AD86 /* GFRefreshHeader.m */; };
 		1829A6A41DE82DCF0086AD86 /* GFRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A31DE82DCF0086AD86 /* GFRefreshFooter.m */; };
 		1829A6A71DE83B9A0086AD86 /* GFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A61DE83B9A0086AD86 /* GFHTTPSessionManager.m */; };
-		1829A6AA1DE84CAF0086AD86 /* GFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6A91DE84CAF0086AD86 /* GFConst.m */; };
 		1829A6AE1DE8550D0086AD86 /* GFTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6AC1DE8550D0086AD86 /* GFTopicCell.m */; };
 		1829A6AF1DE8550D0086AD86 /* GFTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829A6AD1DE8550D0086AD86 /* GFTopicCell.xib */; };
 		18388AD01DFAAB1D004E1DF9 /* GFSubTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18388ACE1DFAAB1D004E1DF9 /* GFSubTagViewCell.m */; };
@@ -31,6 +30,10 @@
 		18388AD41DFAAB27004E1DF9 /* GFSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18388AD31DFAAB27004E1DF9 /* GFSubTagItem.m */; };
 		18388AD81DFAAF21004E1DF9 /* GFRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18388AD61DFAAF21004E1DF9 /* GFRecommendViewController.m */; };
 		18388AD91DFAAF21004E1DF9 /* GFRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18388AD71DFAAF21004E1DF9 /* GFRecommendViewController.xib */; };
+		183E9CEB1E8E585000B13C75 /* GFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E9CE61E8E585000B13C75 /* GFConst.m */; };
+		183E9CEC1E8E585000B13C75 /* GFTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E9CE81E8E585000B13C75 /* GFTopViewController.m */; };
+		183E9CED1E8E585000B13C75 /* GFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E9CEA1E8E585000B13C75 /* GFTopWindow.m */; };
+		183E9CFA1E8E5CA600B13C75 /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E9CF91E8E5CA600B13C75 /* weibo.png */; };
 		1841A7721DE16C1100FB54CC /* GFMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1841A7711DE16C1100FB54CC /* GFMeViewController.storyboard */; };
 		1841A7751DE1750600FB54CC /* GFSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A7741DE1750600FB54CC /* GFSquareItem.m */; };
 		1841A7791DE1752E00FB54CC /* GFSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1841A7771DE1752E00FB54CC /* GFSquareCell.m */; };
@@ -84,8 +87,6 @@
 		18C826351DE736B3007341E3 /* GFPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C826341DE736B3007341E3 /* GFPictureViewController.m */; };
 		18C826381DE736C1007341E3 /* GFWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C826371DE736C1007341E3 /* GFWordViewController.m */; };
 		18C8263E1DE737C9007341E3 /* GFVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8263D1DE737C9007341E3 /* GFVoiceViewController.m */; };
-		18D5AE6B1DF69F94003001D2 /* GFTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5AE6A1DF69F94003001D2 /* GFTopWindow.m */; };
-		18D5AE6E1DF6A49A003001D2 /* GFTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5AE6D1DF6A49A003001D2 /* GFTopViewController.m */; };
 		18E1D13C1DF597F10015243E /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1371DF597F10015243E /* LaunchImage-568h@2x.png */; };
 		18E1D13D1DF597F10015243E /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1381DF597F10015243E /* LaunchImage-700@2x.png */; };
 		18E1D13E1DF597F10015243E /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */; };
@@ -150,8 +151,6 @@
 		1829A6A31DE82DCF0086AD86 /* GFRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRefreshFooter.m; sourceTree = "<group>"; };
 		1829A6A51DE83B9A0086AD86 /* GFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHTTPSessionManager.h; sourceTree = "<group>"; };
 		1829A6A61DE83B9A0086AD86 /* GFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHTTPSessionManager.m; sourceTree = "<group>"; };
-		1829A6A81DE84CAF0086AD86 /* GFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFConst.h; sourceTree = "<group>"; };
-		1829A6A91DE84CAF0086AD86 /* GFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFConst.m; sourceTree = "<group>"; };
 		1829A6AB1DE8550D0086AD86 /* GFTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopicCell.h; sourceTree = "<group>"; };
 		1829A6AC1DE8550D0086AD86 /* GFTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopicCell.m; sourceTree = "<group>"; };
 		1829A6AD1DE8550D0086AD86 /* GFTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFTopicCell.xib; sourceTree = "<group>"; };
@@ -163,6 +162,14 @@
 		18388AD51DFAAF21004E1DF9 /* GFRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRecommendViewController.h; sourceTree = "<group>"; };
 		18388AD61DFAAF21004E1DF9 /* GFRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRecommendViewController.m; sourceTree = "<group>"; };
 		18388AD71DFAAF21004E1DF9 /* GFRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFRecommendViewController.xib; sourceTree = "<group>"; };
+		183E9CE41E8E585000B13C75 /* GFBS.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBS.pch; sourceTree = "<group>"; };
+		183E9CE51E8E585000B13C75 /* GFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFConst.h; sourceTree = "<group>"; };
+		183E9CE61E8E585000B13C75 /* GFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFConst.m; sourceTree = "<group>"; };
+		183E9CE71E8E585000B13C75 /* GFTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopViewController.h; sourceTree = "<group>"; };
+		183E9CE81E8E585000B13C75 /* GFTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopViewController.m; sourceTree = "<group>"; };
+		183E9CE91E8E585000B13C75 /* GFTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopWindow.h; sourceTree = "<group>"; };
+		183E9CEA1E8E585000B13C75 /* GFTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopWindow.m; sourceTree = "<group>"; };
+		183E9CF91E8E5CA600B13C75 /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
 		1841A7711DE16C1100FB54CC /* GFMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GFMeViewController.storyboard; sourceTree = "<group>"; };
 		1841A7731DE1750600FB54CC /* GFSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSquareItem.h; sourceTree = "<group>"; };
 		1841A7741DE1750600FB54CC /* GFSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSquareItem.m; sourceTree = "<group>"; };
@@ -233,7 +240,6 @@
 		18BE029E1DDB4A7600D27893 /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNavigationController.m; sourceTree = "<group>"; };
 		18BE02A01DDB4A8900D27893 /* GFTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBarController.h; sourceTree = "<group>"; };
 		18BE02A11DDB4A8900D27893 /* GFTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBarController.m; sourceTree = "<group>"; };
-		18BE02A31DDB4B0A00D27893 /* GFBS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFBS.pch; sourceTree = "<group>"; };
 		18BE02A41DDB4C0400D27893 /* GFEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFEssenceViewController.h; sourceTree = "<group>"; };
 		18BE02A51DDB4C0400D27893 /* GFEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFEssenceViewController.m; sourceTree = "<group>"; };
 		18BE02AA1DDB4C1E00D27893 /* GFFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFFriendTrendViewController.h; sourceTree = "<group>"; };
@@ -260,10 +266,6 @@
 		18C826371DE736C1007341E3 /* GFWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFWordViewController.m; sourceTree = "<group>"; };
 		18C8263C1DE737C9007341E3 /* GFVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFVoiceViewController.h; sourceTree = "<group>"; };
 		18C8263D1DE737C9007341E3 /* GFVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFVoiceViewController.m; sourceTree = "<group>"; };
-		18D5AE691DF69F94003001D2 /* GFTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopWindow.h; sourceTree = "<group>"; };
-		18D5AE6A1DF69F94003001D2 /* GFTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopWindow.m; sourceTree = "<group>"; };
-		18D5AE6C1DF6A49A003001D2 /* GFTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTopViewController.h; sourceTree = "<group>"; };
-		18D5AE6D1DF6A49A003001D2 /* GFTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTopViewController.m; sourceTree = "<group>"; };
 		18E1D1371DF597F10015243E /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		18E1D1381DF597F10015243E /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
 		18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
@@ -782,17 +784,17 @@
 		18BE02851DDB497A00D27893 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				183E9CE41E8E585000B13C75 /* GFBS.pch */,
+				183E9CE51E8E585000B13C75 /* GFConst.h */,
+				183E9CE61E8E585000B13C75 /* GFConst.m */,
+				183E9CE71E8E585000B13C75 /* GFTopViewController.h */,
+				183E9CE81E8E585000B13C75 /* GFTopViewController.m */,
+				183E9CE91E8E585000B13C75 /* GFTopWindow.h */,
+				183E9CEA1E8E585000B13C75 /* GFTopWindow.m */,
 				186810001E0A9454006454D0 /* Controller */,
 				18BE02861DDB497A00D27893 /* AppDelegate.h */,
 				18BE02871DDB497A00D27893 /* AppDelegate.m */,
-				1829A6A81DE84CAF0086AD86 /* GFConst.h */,
-				1829A6A91DE84CAF0086AD86 /* GFConst.m */,
-				18BE02A31DDB4B0A00D27893 /* GFBS.pch */,
 				18BE02881DDB497A00D27893 /* Category */,
-				18D5AE691DF69F94003001D2 /* GFTopWindow.h */,
-				18D5AE6A1DF69F94003001D2 /* GFTopWindow.m */,
-				18D5AE6C1DF6A49A003001D2 /* GFTopViewController.h */,
-				18D5AE6D1DF6A49A003001D2 /* GFTopViewController.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -841,6 +843,7 @@
 		18E1D1361DF597F10015243E /* LaunchImage */ = {
 			isa = PBXGroup;
 			children = (
+				183E9CF91E8E5CA600B13C75 /* weibo.png */,
 				18E1D1371DF597F10015243E /* LaunchImage-568h@2x.png */,
 				18E1D1381DF597F10015243E /* LaunchImage-700@2x.png */,
 				18E1D1391DF597F10015243E /* LaunchImage-800-667h@2x.png */,
@@ -1002,6 +1005,7 @@
 				1829A6AF1DE8550D0086AD86 /* GFTopicCell.xib in Resources */,
 				18E8D3721DE9EA5700ED4EE1 /* GFTopicPictureView.xib in Resources */,
 				181EF74D1E0BD27B00C91928 /* GFAddToolBar.xib in Resources */,
+				183E9CFA1E8E5CA600B13C75 /* weibo.png in Resources */,
 				18E8D3771DE9EA8E00ED4EE1 /* GFTopicVideoView.xib in Resources */,
 				18388AD91DFAAF21004E1DF9 /* GFRecommendViewController.xib in Resources */,
 				18B7C7221DE06F67004BD781 /* GFFriendTrendViewController.xib in Resources */,
@@ -1084,7 +1088,6 @@
 				18BE02AC1DDB4C1E00D27893 /* GFFriendTrendViewController.m in Sources */,
 				18BE02A21DDB4A8900D27893 /* GFTabBarController.m in Sources */,
 				189CA3251DDADBF6004D07EA /* main.m in Sources */,
-				18D5AE6E1DF6A49A003001D2 /* GFTopViewController.m in Sources */,
 				180292421DE990C700743619 /* NSCalendar+GFExtension.m in Sources */,
 				18E8D36C1DE9D19800ED4EE1 /* GFComment.m in Sources */,
 				18A23F7B1DEBDA5D001FC558 /* UIImage+GFImage.m in Sources */,
@@ -1097,6 +1100,7 @@
 				1802923F1DE98E3800743619 /* NSDate+GFExtension.m in Sources */,
 				18E8D3701DE9EA4D00ED4EE1 /* GFTopicPictureView.m in Sources */,
 				189980541DDBF6D2009071F4 /* GFAdItem.m in Sources */,
+				183E9CEB1E8E585000B13C75 /* GFConst.m in Sources */,
 				18B7C7371DE081BA004BD781 /* GFMemberField.m in Sources */,
 				1841A7791DE1752E00FB54CC /* GFSquareCell.m in Sources */,
 				18C6FEA61DFBD96F00ED1195 /* GFRecommendCategory.m in Sources */,
@@ -1112,7 +1116,7 @@
 				1829A69E1DE7E8390086AD86 /* GFTopic.m in Sources */,
 				18BE02B51DDB6EB100D27893 /* GFTabBar.m in Sources */,
 				1829A6AE1DE8550D0086AD86 /* GFTopicCell.m in Sources */,
-				18D5AE6B1DF69F94003001D2 /* GFTopWindow.m in Sources */,
+				183E9CEC1E8E585000B13C75 /* GFTopViewController.m in Sources */,
 				18C6FEA91DFBD99200ED1195 /* GFRecommendUser.m in Sources */,
 				18B7C7341DE07FE7004BD781 /* GFFastButton.m in Sources */,
 				18BE02911DDB497A00D27893 /* AppDelegate.m in Sources */,
@@ -1134,11 +1138,11 @@
 				18C826291DE72630007341E3 /* GFTitleButton.m in Sources */,
 				181EF74B1E0BD27400C91928 /* GFAddToolBar.m in Sources */,
 				18B7C73A1DE08392004BD781 /* UITextField+GFPlaceholder.m in Sources */,
+				183E9CED1E8E585000B13C75 /* GFTopWindow.m in Sources */,
 				1899804C1DDBF33D009071F4 /* UIView+GFFrame.m in Sources */,
 				18E8D36D1DE9D19800ED4EE1 /* GFUser.m in Sources */,
 				18E8D3751DE9EA8400ED4EE1 /* GFTopicVideoView.m in Sources */,
 				1829A6A71DE83B9A0086AD86 /* GFHTTPSessionManager.m in Sources */,
-				1829A6AA1DE84CAF0086AD86 /* GFConst.m in Sources */,
 				189980501DDBF6B4009071F4 /* GFAdViewController.m in Sources */,
 				18B7C73D1DE08620004BD781 /* GFSubTagViewController.m in Sources */,
 				181EF7421E0B5DA000C91928 /* GFPostWordViewController.m in Sources */,

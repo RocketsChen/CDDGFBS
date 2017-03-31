@@ -143,7 +143,9 @@ static NSString *const topicID = @"topic";
         
         [SVProgressHUD showWithStatus:@"网络繁忙，请稍后再试~"];
         [self.tableView.mj_header endRefreshing];
-        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     }];
     
 }
@@ -181,6 +183,9 @@ static NSString *const topicID = @"topic";
         
         [SVProgressHUD showWithStatus:@"网络繁忙，请稍后再试~"];
         [self.tableView.mj_footer endRefreshing];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
         
     }];
     

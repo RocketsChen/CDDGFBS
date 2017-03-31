@@ -15,6 +15,8 @@
 #import "GFTopicVoiceView.h"
 #import "GFTopicPictureView.h"
 
+#import <SVProgressHUD.h>
+#import <Social/Social.h>
 #import <UIImageView+WebCache.h>
 
 
@@ -81,16 +83,75 @@
     
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
+    [controller addAction:[UIAlertAction actionWithTitle:@"分享" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeSinaWeibo]) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"馨提示" message:@"您的微博分享功能未开通，请去设置界面设置新浪客户端，即可开启你好职大分享功能~" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+            [alert show];
+            return;
+        }
+        SLComposeViewController *composeVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeSinaWeibo];
+        
+        [composeVC addImage:[UIImage imageNamed:self.topic.small_image]];
+        
+        [composeVC setInitialText:self.topic.text];
+        if (self.topic.type == GFTopicTypeVideo) {
+            [composeVC addURL:[NSURL URLWithString:self.topic.videouri]];
+        }else if (self.topic.type == GFTopicTypeVoice){
+            [composeVC addURL:[NSURL URLWithString:self.topic.voiceuri]];
+        }
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:composeVC animated:YES completion:nil];
+        
+        composeVC.completionHandler = ^(SLComposeViewControllerResult result){
+            if (result == SLComposeViewControllerResultDone) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"您已分享成功，是否是微博查看" delegate:nil cancelButtonTitle:@"不去了" otherButtonTitles:@"去看看", nil];
+                [alert show];
+                
+                //前去微博的app 方法
+                /*
+                NSURL *appBUrl = [NSURL URLWithString:@"sinaweibo://"];
+
+                if ([[UIApplication sharedApplication] canOpenURL:appBUrl]) {
+
+                    [[UIApplication sharedApplication] openURL:appBUrl];
+                } else {
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"您的手机暂未下载微博客户端~" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+                    [alert show];
+                }
+                 */
+                
+            }else{
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"您取消了微博分享~" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+        };
+    }]];
+    
     [controller addAction:[UIAlertAction actionWithTitle:@"收藏" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        GFBSLog(@"点击了[收藏]按钮");
+        
+        [SVProgressHUD show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+            
+            [SVProgressHUD showSuccessWithStatus:@"收藏成功！"];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+        });
     }]];
     
     [controller addAction:[UIAlertAction actionWithTitle:@"举报" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        GFBSLog(@"点击了[举报]按钮");
+        [SVProgressHUD show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"我们已收到您的举报，请耐心等候~" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+            [alert show];
+        });
     }]];
     
+    
     [controller addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        GFBSLog(@"点击了[取消]按钮");
     }]];
     
     
